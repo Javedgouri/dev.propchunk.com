@@ -40,9 +40,7 @@ class Home extends CI_Controller {
 	//function to load index page
 	public function index(){
 		$this->output->cache(1);
-		$this->load->view('header');
 		$this->load->view('home');
-		$this->load->view('footer');
 	}
 
 	public function auth(){
@@ -155,9 +153,18 @@ class Home extends CI_Controller {
 		$this->load->view('about-us');
 		$this->load->view('footer');
 	}
-	public function gallery(){
-	
-		$this->load->view('gallery');
-	
-		}
+
+	//function to load discover page 
+	public function discoverpage(){
+		$this->load->model('Getinfo');
+		$this->load->helper('file');
+		$result=$this->Getinfo->filljson();
+		$fp = fopen('./json_file/campaigndata.json', 'w+');
+		fwrite($fp, json_encode($result,JSON_PRETTY_PRINT));
+		//print_r($result);
+		$this->load->view('header');
+		$this->load->view('discover');
+		$this->load->view('footer');
+
+	}
 }
