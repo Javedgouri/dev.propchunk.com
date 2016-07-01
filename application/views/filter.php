@@ -56,7 +56,7 @@
 	$flag=0;
 
 
-  $jsondata = file_get_contents('campaigndata.json');
+  $jsondata = file_get_contents('./json_file/campaigndata.json');
   $data = json_decode($jsondata, true);
   foreach ($data as $property) {
 	  if( $property['Locality'] == $flocality && ($property['MinInvestmentAmount'] > $fmin &&  $property['MinInvestmentAmount'] < $fmax ) && ( $property['ActualIRRPercentage'] > $fymin && $property['ActualIRRPercentage'] < $fymax) )
