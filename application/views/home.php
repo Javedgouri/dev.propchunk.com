@@ -793,7 +793,7 @@
 	<br>
 	<br>
 	<div class="text-center">
-	<a href="#" class="btn btn-skin" >VIEW MORE</a> 
+	<a href="<?php echo site_url('Home/discover');?>" class="btn btn-skin" >VIEW MORE</a> 
 	</div>
 	<br />
 	<br />
