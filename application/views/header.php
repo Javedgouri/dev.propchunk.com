@@ -1664,10 +1664,10 @@ top tech companies in India
 
     
     <title></title>
-    <link rel="icon" href="favicon rect.ico" />
-    <!--FAQ SLIDER-->
-     <!--<link href="<?php/* echo base_url('/assets/css/tabandslidder.css');*/?>" rel="stylesheet" type="text/css">-->
 	
+	<!--<link href="images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" /><!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]--><!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    <link rel="icon" href="images/faviconrect.ico" />
+   
 
     <!-- Bootstrap Core CSS -->
     <link href="<?php echo base_url('/bootstrap/css/bootstrap.min.css');?>" rel="stylesheet" type="text/css">
@@ -1679,6 +1679,10 @@ top tech companies in India
     <!-- Squad theme CSS -->
     <link href="<?php echo base_url('/bootstrap/css/style.css');?>" rel="stylesheet">
 	<link href="<?php echo base_url('/bootstrap/color/default.css');?>" rel="stylesheet">
+	
+	
+	 <!--FAQ SLIDER-->
+     <!--<link href="<?php/* echo base_url('/assets/css/tabandslidder.css');*/?>" rel="stylesheet" type="text/css">-->
 	
 	<!-- Begin Inspectlet Embed Code -->
 	<script type="text/javascript" id="inspectletjs">
@@ -1706,12 +1710,15 @@ top tech companies in India
  	width: 100%;		
  	height: 100%;		
  	z-index: 9999;		
- 	background: url(default.gif) center no-repeat #fff;		
+ 	background: url(/dev.propchunk.com/img/default.gif) center no-repeat #fff;		
     }		
  	</style>		
 	<!-- -->
  	
 	<!-- SCRIPT FOR LOADING GIF ICON -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+ 
 	<script>		
  	$(window).load(function() {		
  		// Animate loader off screen		
@@ -1727,6 +1734,34 @@ top tech companies in India
          }
          </style>
          <!-- -->
+		 
+		 <!-- STYLING FOR SLIDER-->
+	<style>
+	html{
+	  max-width:100%;
+	  overflow-x:hidden;
+	}
+	.box{
+		padding-left:0px !important;
+		padding-right:0px !important;
+	}
+	td {
+	padding : 0 0.5em;	
+		
+	}
+	.up-pad{
+		padding-top:0.5em;
+	}
+	
+	</style>
+
+	<!-- STYLING FOR SLICK CAROUSEL SLIDER -->
+<!--YES--> <link href="<?php echo base_url('/assets/css/slick.css');?>" rel="stylesheet"/>
+<!--YES--><link href="<?php echo base_url('/assets/css/slick-theme.css');?>" rel="stylesheet"/>
+
+	<!-- -->
+
+		 
  	<!-- STYLING FOR FB /GOOGLE COLORS -->
 	 <style>
 			.blue{
@@ -1749,16 +1784,109 @@ top tech companies in India
 	<!-- Main style sheet -->
     <link href="<?php echo base_url('/assets/css/style-discover.css');?>" rel="stylesheet">    
 	<!-- -->
-	
+	<!-- -->
+	<style>
+	.title-h1{
+		font-size:26px;
+		font-weight:bold;
+		color : white;	
+	}
+	.background{
+		opacity:0.2;
+	}
+	.title-h5{
+		color:white;
+	}
+	.title-h6{
+		color:white;
+	}
+	.margin-btn{
+		margin:0 26px;
+	}
+	</style>
+	<!-- -->
+	<!-- STYLING FOR CENTER ALIGNING BAR CHART-->
+	<style>
+	div#bar {
+    padding-left: 16%;
+    padding-right: 10%;
+	}
+	</style>
+	<!-- -->
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="<?php echo base_url('assets/js/typed.js');?>" type="text/javascript"></script>
+    <script>
+    $(function(){
+
+        $("#typed").typed({
+            strings: ["FRACTIONAL OWNERSHIP OF REAL ESTATE.", "INVEST DIRECTLY AND SAFELY VIA SPV.", "100% TRANSPARENCY ALL LEGAL DOCUMENTS IN YOUR NAME.", "ONLY HIGH QUALITY REPUTED BUILDERS."],
+         
+            typeSpeed: 200 ,
+            backDelay: 500,
+            loop: true,
+            contentType: 'html', // or text
+            // defaults to false for infinite loop
+            loopCount: false,
+           
+        });
+
+       
+
+    });
+
+    
+    </script>
+    <!--<link href="main.css" rel="stylesheet"/>-->
+    <style>
+		
+        /* code for animated blinking cursor */
+        .typed-cursor{
+            opacity: 1;
+            font-weight: 100;
+            -webkit-animation: blink 0.7s infinite;
+            -moz-animation: blink 0.7s infinite;
+            -ms-animation: blink 0.7s infinite;
+            -o-animation: blink 0.7s infinite;
+            animation: blink 0.7s infinite;
+        }
+        @-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-webkit-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-moz-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-ms-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-o-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+    </style>
+
 	
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
 	<!-- Preloader -->
+	<!--
 	<div id="preloader">
 	  <div id="load"></div>
 	</div>
-        
+    -->
+	<div class ="se-pre-con"></div>    
               
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
@@ -1774,16 +1902,16 @@ top tech companies in India
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="">Browse Project</a></li>
-        <li><a href="">Investor Protection</a></li>
+        <li class="active"><a href="<?php echo site_url('Home/discover');?>">Browse Project</a></li>
+        <li><a href="#">Investor Protection</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Learn<b class="caret"></b></a>
           <ul class="dropdown-menu dropdown-menu-right">
-            <li><a href="#">How it works</a></li>
+            <li><a href="#how-it-works">How it works</a></li>
             <li><a href="<?php echo site_url('Home/faq');?>">FAQ's</a></li>
             <li><a href="<?php echo site_url('Home/about_us');?>">About us</a></li>
             <li><a href="<?php echo site_url('Home/contact');?>">Contact US</a></li>
-            <li><a href="blog.propchunk.com" target="_blank">Blog</a></li>
+            <li><a href="http://www.blog.propchunk.com" target="_blank">Blog</a></li>
           </ul>
         </li>
         <li><?php

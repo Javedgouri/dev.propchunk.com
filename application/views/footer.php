@@ -227,29 +227,33 @@ jQuery.validator.addMethod("laxEmail", function(value, element) {
 </script>
 
 -->
-
+	
 <!--FOR INFINITY SLIDER  -->
-	  <script type="text/javascript" src="<?php echo base_url('http://code.jquery.com/jquery-1.11.0.min.js');?>"></script>
-  <script type="text/javascript" src="<?php echo base_url('http://code.jquery.com/jquery-migrate-1.2.1.min.js');?>"></script>
- <script src="<?php echo base_url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.0/slick.js');?>"></script>
+	  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.0/slick.js"></script>
         <script>
 
 
  $(document).ready(function() {
 
     $('.slider').slick({
-        // dots: true,
+        dots: true,
         infinite: true,
-        speed: 300,
+        speed: 20,
         arrows:true,
         slidesToShow: 4,
         slidesToScroll: 1,
+		autoplay: true,
+        autoplaySpeed: 2000,
         responsive: [{
             breakpoint: 1024,
             settings: {
                 slidesToShow: 3,
                 slidesToScroll: 1,
                 // centerMode: true,
+				autoplay: true,
+                autoplaySpeed: 2000,
 
             }
 
@@ -260,6 +264,8 @@ jQuery.validator.addMethod("laxEmail", function(value, element) {
                 slidesToScroll: 2,
                 dots: true,
                 infinite: true,
+				autoplay: true,
+                autoplaySpeed: 2000,
 
             }
 
@@ -271,7 +277,8 @@ jQuery.validator.addMethod("laxEmail", function(value, element) {
                 slidesToScroll: 2,
                 dots: true,
                 infinite: true,
-                
+                autoplay: true,
+                autoplaySpeed: 2000,
             }
         }, {
             breakpoint: 480,
