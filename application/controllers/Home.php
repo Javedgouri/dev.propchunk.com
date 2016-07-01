@@ -167,4 +167,8 @@ class Home extends CI_Controller {
 		$this->load->view('footer');
 
 	}
+		//function to load filter.php
+	public function filter(){
+		$this->load->view('filter');
+	}
 }
