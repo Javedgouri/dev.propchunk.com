@@ -1715,6 +1715,8 @@ top tech companies in India
  	</style>		
 	<!-- -->
  	
+	
+
 	<!-- SCRIPT FOR LOADING GIF ICON -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
@@ -1787,7 +1789,7 @@ top tech companies in India
 	<!-- -->
 	<style>
 	.title-h1{
-		font-size:26px;
+		font-size:36px;
 		font-weight:bold;
 		color : white;	
 	}
@@ -1796,6 +1798,7 @@ top tech companies in India
 	}
 	.title-h5{
 		color:white;
+		font-size:20px;
 	}
 	.title-h6{
 		color:white;

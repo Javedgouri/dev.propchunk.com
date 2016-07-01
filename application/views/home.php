@@ -5,13 +5,15 @@
 			<!--<h2>WELCOME TO <span class="text_color">SQUAD</span> </h2>
 			<h4>WE ARE GROUP OF GENTLEMEN MAKING AWESOME WEB WITH BOOTSTRAP</h4>-->
 			<h1 class="title-h1">OWN A CHUNK OF MUMBAI WITH JUST <span style="white-space:pre;"><b><i class="fa fa-inr"></i> 1 LAKH </b></span></h1>
-			<h5 class="title-h5">INDIA'S FIRST REAL ESTATE CROWDFUNDING PLATFORM </h5>
-			<h6 class="title-h6">OPEN TO EVERYONE</h6>
+			<h5 class="title-h5">INDIA'S FIRST REAL ESTATE CROWDFUNDING PLATFORM. OPEN TO EVERYONE</h5>
 		</div>
 		<br />
-		<div class="text-center home-section">
+		<div class="text-center">
 		<a class ="btn btn-skin margin-btn" href="<?php echo site_url('Home/discover'); ?>">VIEW LIVE PROJECTS </a>
 		<a class = "btn btn-skin margin-btn" href="#how-it-works">HOW IT WORKS</a>
+	    <br />
+		<br />
+		<h4 class="title-h5" style="color:white;margin-top:30px;"><span id="typed"></span></h4>
 		</div>
 		<!--
 		<div class="page-scroll">
@@ -23,7 +25,6 @@
 		<br />			
 						
     </section>
-	
 	
 		<!-- Section: HOW IT WORKS -->
     <section id="how-it-works" class="home-section text-center">
@@ -64,8 +65,8 @@
 
 			<div class="box alt ">
 			<div class="row uniform 50%" style="word-wrap: break-word;">
-			<div class="4u wow fadeIn animated col-xs-6 col-sm-4 col-md-4" data-wow-delay="0.8s" data-wow-duration="1.5s" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.8s; animation-name: fadeIn;">
-			<div class="text-center" style="color:#505393;">
+			<div class="4u wow fadeIn animated col-md-4 col-sm-4" data-wow-delay="0.8s" data-wow-duration="1.5s" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.8s; animation-name: fadeIn;">
+			<div class="text-center " style="color:#505393;">
 			<i class="fa fa-search fa-5x"></i>
 			<h4><br />
 			Select a property</h4>
@@ -75,7 +76,7 @@
 			<p class="text-justify" style="color: #381417;">Browse through a list of highly curated properties with. All of the properties listed undergo stringent due diligence and have a high appreciation potential.</p>
 			</div>
 
-			<div class="4u wow fadeIn animated col-xs-6 col-sm-4 col-md-4" data-wow-delay="0.8s" data-wow-duration="1.5s" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.8s; animation-name: fadeIn;">
+			<div class="4u wow fadeIn animated col-md-4 col-sm-4" data-wow-delay="0.8s" data-wow-duration="1.5s" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.8s; animation-name: fadeIn;">
 			<div class="text-center" style="color:#505393;">
 			<i class="fa fa-inr fa-5x"></i>
 			<h4><br />
@@ -86,7 +87,7 @@
 			<p class="text-justify" style="color: #381417;">Decide on how much % of the selected property you want to own and invest only a fraction of the total sum. You become a #FractionalOwner !</p>
 			</div>
 
-			<div class="4u wow fadeIn animated col-xs-6 col-sm-4 col-md-4" data-wow-delay="0.8s" data-wow-duration="1.5s" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.8s; animation-name: fadeIn;">
+			<div class="4u wow fadeIn animated col-md-4 col-sm-4" data-wow-delay="0.8s" data-wow-duration="1.5s" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.8s; animation-name: fadeIn;">
 			<div class="text-center" style="color:#505393;">
 			<i class="fa fa-line-chart fa-5x"></i>
 			<h4><br />
@@ -793,7 +794,7 @@
 	<br>
 	<br>
 	<div class="text-center">
-	<a href="<?php echo site_url('Home/discover');?>" class="btn btn-skin" >VIEW MORE</a> 
+	<a href="#" class="btn btn-skin" >VIEW MORE</a> 
 	</div>
 	<br />
 	<br />

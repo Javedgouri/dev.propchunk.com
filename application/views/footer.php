@@ -228,8 +228,39 @@ jQuery.validator.addMethod("laxEmail", function(value, element) {
 
 -->
 	
-<!--FOR INFINITY SLIDER  -->
-	  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<!-- -->
+   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="<?php echo base_url('/assets/js/typed.js');?>" type="text/javascript"></script>
+    <script>
+    $(function(){
+
+        $("#typed").typed({
+            strings: ["FRACTIONAL OWNERSHIP OF REAL ESTATE.", "INVEST DIRECTLY AND SAFELY VIA SPV.", "100% TRANSPARENCY ALL LEGAL DOCUMENTS IN YOUR NAME.", "ONLY HIGH QUALITY REPUTED BUILDERS."],
+         
+            typeSpeed: 200 ,
+            backDelay: 500,
+            loop: true,
+            contentType: 'html', // or text
+            // defaults to false for infinite loop
+            loopCount: false,
+           
+        });
+
+       
+
+    });
+
+    
+    </script>
+   <!-- -->
+   <!--
+   <script>
+   $free = jQuery.noConflict(true);
+   </script>
+   -->
+   
+   <!--FOR INFINITY SLIDER  -->
+	 <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script> -->
   <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.0/slick.js"></script>
         <script>
@@ -251,7 +282,7 @@ jQuery.validator.addMethod("laxEmail", function(value, element) {
                 slidesToShow: 3,
                 slidesToScroll: 1,
                 // centerMode: true,
-		autoplay: true,
+				autoplay: true,
                 autoplaySpeed: 1000,
 
             }
@@ -259,12 +290,12 @@ jQuery.validator.addMethod("laxEmail", function(value, element) {
         }, {
             breakpoint: 800,
             settings: {
+				arrows:false,
                 slidesToShow: 2,
                 slidesToScroll: 2,
                 dots: true,
-                arrows:false,
                 infinite: true,
-		autoplay: true,
+				autoplay: true,
                 autoplaySpeed: 1000,
 
             }
@@ -276,7 +307,7 @@ jQuery.validator.addMethod("laxEmail", function(value, element) {
                 slidesToShow: 2,
                 slidesToScroll: 2,
                 dots: true,
-                arrows:false,
+				arrows:false,
                 infinite: true,
                 autoplay: true,
                 autoplaySpeed: 1000,
@@ -287,7 +318,6 @@ jQuery.validator.addMethod("laxEmail", function(value, element) {
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 dots: true,
-                arrows:false,
                 infinite: true,
                 autoplay: true,
                 autoplaySpeed: 1000,
@@ -299,4 +329,3 @@ jQuery.validator.addMethod("laxEmail", function(value, element) {
 });
         </script>
 
-	<!-- -->
