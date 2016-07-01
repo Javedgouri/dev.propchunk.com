@@ -1666,7 +1666,7 @@ top tech companies in India
     <title></title>
 	
 	<!--<link href="images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" /><!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]--><!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-    <link rel="icon" href="images/faviconrect.ico" />
+    <link rel="icon" href="<?php echo base_url('./images/faviconrect.ico');?>" />
    
 
     <!-- Bootstrap Core CSS -->
