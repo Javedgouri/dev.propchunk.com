@@ -240,20 +240,19 @@ jQuery.validator.addMethod("laxEmail", function(value, element) {
     $('.slider').slick({
         dots: true,
         infinite: true,
-        speed: 20,
         arrows:true,
         slidesToShow: 4,
         slidesToScroll: 1,
 		autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 1000,
         responsive: [{
             breakpoint: 1024,
             settings: {
                 slidesToShow: 3,
                 slidesToScroll: 1,
                 // centerMode: true,
-				autoplay: true,
-                autoplaySpeed: 2000,
+		autoplay: true,
+                autoplaySpeed: 1000,
 
             }
 
@@ -263,9 +262,10 @@ jQuery.validator.addMethod("laxEmail", function(value, element) {
                 slidesToShow: 2,
                 slidesToScroll: 2,
                 dots: true,
+                arrows:false,
                 infinite: true,
-				autoplay: true,
-                autoplaySpeed: 2000,
+		autoplay: true,
+                autoplaySpeed: 1000,
 
             }
 
@@ -276,9 +276,10 @@ jQuery.validator.addMethod("laxEmail", function(value, element) {
                 slidesToShow: 2,
                 slidesToScroll: 2,
                 dots: true,
+                arrows:false,
                 infinite: true,
                 autoplay: true,
-                autoplaySpeed: 2000,
+                autoplaySpeed: 1000,
             }
         }, {
             breakpoint: 480,
@@ -286,9 +287,10 @@ jQuery.validator.addMethod("laxEmail", function(value, element) {
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 dots: true,
+                arrows:false,
                 infinite: true,
                 autoplay: true,
-                autoplaySpeed: 2000,
+                autoplaySpeed: 1000,
             }
         }]
     });
