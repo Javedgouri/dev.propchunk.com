@@ -129,7 +129,7 @@
 	  <!-- ON INITIAL LOAD LOAD ALL CONTENTS(PROPERTY) --> 
 	  
 	<?php
-  $jsondata = file_get_contents('campaigndata.json');
+  $jsondata = file_get_contents('./json_file/campaigndata.json');
   $data = json_decode($jsondata, true);
   foreach ($data as $property) {
 	   $property_price = $property['PropertyName'];
@@ -140,7 +140,7 @@
 	$property_area = $property['FullAddress'];
 	$property_type = $property['PropertyDescription'];
 	
-    echo '<div class="col-md-4"> <article class="aa-properties-item"> <a href="#" class="aa-properties-item-img"><img src="item/1.jpg" alt="img"></a><div class="aa-tag for-sale">'.$property_type.'</div><div class="aa-properties-item-content"><div class="aa-properties-info"><span>'.$property_rooms.' ROOMS </span><span>'.$property_beds.' BEDS</span><span>'.$property_area.' SQ. FT</span></div><div class="aa-properties-about"><h3><a href="#">'.$property_apartment. '</a></h3><p>'.$property_description.'</p>s</div><div class="aa-properties-detial"><span class="aa-price"><i class= "fa fa-inr"></i>'.$property_price.'</span><a href="#" class="aa-secondary-btn">View Details</a></div></div></article></div>';
+    echo '<div class="col-md-4"> <article class="aa-properties-item"> <a href="#" class="aa-properties-item-img"><img src="'.base_url('/item/1.jpg').'" alt="img"></a><div class="aa-tag for-sale">'.$property_type.'</div><div class="aa-properties-item-content"><div class="aa-properties-info"><span>'.$property_rooms.' ROOMS </span><span>'.$property_beds.' BEDS</span><span>'.$property_area.' SQ. FT</span></div><div class="aa-properties-about"><h3><a href="#">'.$property_apartment. '</a></h3><p>'.$property_description.'</p>s</div><div class="aa-properties-detial"><span class="aa-price"><i class= "fa fa-inr"></i>'.$property_price.'</span><a href="#" class="aa-secondary-btn">View Details</a></div></div></article></div>';
 	$flag = 1;
 	}
 	if($flag==0)
@@ -201,7 +201,7 @@ $('#search').click(function() {
 	
     $.ajax({
         type: 'POST',
-        url: 'filter.php',
+        url: '<?php echo base_url('Home/filter');?>',
         data: { locality: val1, MinInvestmentAmount: val2 ,yield : val3,keyword : val4},
         success: function(response) {
             $('#id01').html(response);
