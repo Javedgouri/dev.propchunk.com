@@ -1119,7 +1119,7 @@
         <div class="row">
            <div class="col-xs-12 col-sm-4 col-md-4">
 				<div class="wow bounceInUp" data-wow-delay="0.2s">
-                <div class="team boxed-grey" style="background-image : url('../squadfree/item/1.jpg')">
+                <div class="team boxed-grey" style="background-image : url('/item/1.jpg')">
                     <div class="inner">
 						<!--
 						<h5>REGULAR OWNERSHIP</h5>
@@ -1143,7 +1143,7 @@
             </div>
 			<div class="col-xs-12 col-sm-4 col-md-4">
 				<div class="wow bounceInUp" data-wow-delay="0.5s">
-                <div class="team boxed-grey" style="background-image : url('../squadfree/item/1.jpg')">
+                <div class="team boxed-grey" style="background-image : url('/item/1.jpg')">
                     <div class="inner">
 					<!--
 						<h5>FRACTIONAL OWNERSHIP</h5>
@@ -1171,7 +1171,7 @@
             </div>
 			<div class="col-xs-12 col-sm-4 col-md-4">
 				<div class="wow bounceInUp" data-wow-delay="0.8s">
-                <div class="team boxed-grey" style="background-image : url('../squadfree/item/1.jpg')">
+                <div class="team boxed-grey" style="background-image : url('/item/1.jpg')">
                     <div class="inner">
 						
 						<!--<h5>Jack Briane</h5>
