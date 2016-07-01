@@ -40,7 +40,9 @@ class Home extends CI_Controller {
 	//function to load index page
 	public function index(){
 		$this->output->cache(1);
+		$this->load->view('header');
 		$this->load->view('home');
+		$this->load->view('footer');
 	}
 
 	public function auth(){
@@ -75,6 +77,12 @@ class Home extends CI_Controller {
 	public function contact(){
 		$this->load->view('header');
 		$this->load->view('contact');
+		$this->load->view('footer');
+	}
+	//function to load discover page
+	public function discover(){
+		$this->load->view('header');
+		$this->load->view('discover');
 		$this->load->view('footer');
 	}
 	//function to store the contact data from contact page 
@@ -153,8 +161,12 @@ class Home extends CI_Controller {
 		$this->load->view('about-us');
 		$this->load->view('footer');
 	}
-
-	//function to load discover page 
+	public function gallery(){
+	
+		$this->load->view('gallery');
+	
+		}
+		//function to load discover page 
 	public function discoverpage(){
 		$this->load->model('Getinfo');
 		$this->load->helper('file');
@@ -165,10 +177,10 @@ class Home extends CI_Controller {
 		$this->load->view('header');
 		$this->load->view('discover');
 		$this->load->view('footer');
-
 	}
-		//function to load filter.php
+	//function to load filter.php
 	public function filter(){
 		$this->load->view('filter');
 	}
 }
+	
