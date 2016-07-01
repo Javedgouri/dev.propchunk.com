@@ -1,3 +1,12 @@
+	<head>
+	<style>
+	.change-color{
+		color:white !important;
+		
+	}
+	</style>
+	</head>
+
 	<!-- Section: intro -->
     <section id="intro" class="intro" >
 	

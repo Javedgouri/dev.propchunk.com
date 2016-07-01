@@ -17,7 +17,8 @@
                 echo form_open('Auth/new_user_subscription');
                 ?>
       
-                          
+                        
+						
     <div class="row col-lg-8 col-md-12 col-sm-12 col-xs-12 " >
                     <!--<form role="form" action="" method="POST" class="login-form" id="login-form" name="login-form">-->
                              

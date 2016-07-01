@@ -1666,8 +1666,10 @@ top tech companies in India
     <title></title>
 	
 	<!--<link href="images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" /><!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]--><!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-    <link rel="icon" href="<?php echo base_url('./images/faviconrect.ico');?>" />
-   
+    <!--<link rel="icon" href="l('./images/faviconrect.ico')" />-->
+	
+	<link rel="shortcut icon" href="<?php echo base_url('./images/favicon.ico');?>" type="image/x-icon">
+	<link rel="icon" href="<?php echo base_url('./images/favicon.ico');?>" type="image/x-icon">
 
     <!-- Bootstrap Core CSS -->
     <link href="<?php echo base_url('/bootstrap/css/bootstrap.min.css');?>" rel="stylesheet" type="text/css">
@@ -1905,10 +1907,10 @@ top tech companies in India
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="<?php echo site_url('Home/discover');?>">Browse Project</a></li>
-        <li><a href="#">Investor Protection</a></li>
+        <li class="<!--active-->"><a href="<?php echo site_url('Home/discover');?>" class="change-color">Browse Project</a></li>
+        <li><a href="#" class="change-color">Investor Protection</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Learn<b class="caret"></b></a>
+          <a href="#" class="dropdown-toggle change-color" data-toggle="dropdown">Learn<b class="caret"></b></a>
           <ul class="dropdown-menu dropdown-menu-right">
             <li><a href="#how-it-works">How it works</a></li>
             <li><a href="<?php echo site_url('Home/faq');?>">FAQ's</a></li>
