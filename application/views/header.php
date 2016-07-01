@@ -1712,7 +1712,7 @@ top tech companies in India
  	width: 100%;		
  	height: 100%;		
  	z-index: 9999;		
- 	background: url(/dev.propchunk.com/img/default.gif) center no-repeat #fff;		
+ 	background: url(/img/default.gif) center no-repeat #fff;		
     }		
  	</style>		
 	<!-- -->
