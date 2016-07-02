@@ -1,12 +1,30 @@
 	<head>
 	<style>
+	.h-pad{
+		margin:10px 0px; ;
+	}
 	.change-color{
 		color:white !important;
 		
 	.home-section{
 		padding-bottom:0px !important;
 	}
-	}
+	
+span#name{
+  font-weight: 700;
+padding-top: 5px;
+text-transform: uppercase;
+}
+span#number{
+  font-family: Georgia, Serif;
+     font-size: 20px;
+     font-weight: 500;
+}
+
+	
+	
+	
+	
 	
 	</style>
 	<script>
@@ -19,20 +37,130 @@ $(document).ready(function(){
 	</head>
 
 
+
+<section id="intro" class="intro "  >
+						<div class="inner change-color">
+					<h2 class="title-h6">VBHC Greenwoods Palghar</h2><!-- PROPERTY NAME HERE-->
+	                <p class="title-h6">The funds are being raised for the purchase of a 1-BHK flat at VBHC, Palghar(E).</p><!-- PROPERTY DESC -->	</div>
+
+<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+<div class="text-center">
+<br />
+<br />
+<br />
+<a class="btn btn-skin">PROPERTY TYPE: RESIDENTIAL </a>&nbsp;
+<br />
+<br />
+<br />
+</div>
+
+</div>
+<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 text-center" style="background-color:whitesmoke; padding:0px;">
+<div class="row col-lg-12" style="color:black;">
+<div class="progress" style="border-radius:0px;height:34px;">
+    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%; background-color:#ed4933;">
+      <span style="color:#ed49333;font-size:17px;font-weight:bold;">80% Complete</span>
+    </div>
+  </div>
+
+</div>	
+<div class="row col-lg-12" style="color:black;padding:0 10px;">
+<div class="row col-lg-4 col-md-4 col-sm-4 col-xs-4" style="padding-bottom:20px;">
+	<i class="fa fa-pie-chart" style="font-size:36px;" ></i><br/>
+	<span class="glyphicon glyphicon-info-sign trcorner" style="font-size:100%;color:#000000;top: 0 !important;right: 0 !important;position: absolute !important;" data-toggle="tooltip" title="Amount Left!"></span>
+	<span>20 Lacs</span><br/>
+	
+<span id="name">Amount Left</span>
+</div >
+<div class="row col-lg-4 col-md-4 col-sm-4 col-xs-4" style="padding-bottom:20px;">
+	<i class="fa fa-ticket" style="font-size:36px;"></i><br/>
+		<span class="glyphicon glyphicon-info-sign trcorner" style="font-size:100%;color:#000000;top: 0 !important;right: 0 !important;position: absolute !important;" data-toggle="tooltip" title="Min Investment!"></span>
+	<span>1 Lac</span><br/>
+	
+
+	<span id="name">Minimum Investment</span>
+
+</div >
+<div class="row col-lg-4 col-md-4 col-sm-4 col-xs-4" style="padding-bottom:20px;">
+	<i class="fa fa-inr" style="font-size:36px;"></i><br/>
+	<span class="glyphicon glyphicon-info-sign trcorner" style="font-size:100%;color:#000000;top: 0 !important;right: 0 !important;position: absolute !important;" data-toggle="tooltip" title="Total Investment!"></span>
+<span>40 Lacs</span><br/>
+	
+
+	<span id="name">Total Investment</span>
+
+</div >
+<hr/>
+<div class="row col-lg-12" style="color:black;">
+<div class="row col-lg-4 col-md-4 col-sm-5 col-xs-5" style="padding-bottom:20px;">
+	<i class="fa fa-calendar" aria-hidden="true" style="font-size:36px;" ></i><br/>
+<span class="glyphicon glyphicon-info-sign trcorner" style="font-size:100%;color:#000000;top: 0 !important;right: 0 !important;position: absolute !important;" data-toggle="tooltip" title="Min Investment!"></span>
+	<span>32 Months</span><br/>
+	
+
+<span id="name" ><!--<i class="fa fa-info trcorner" data-toggle="tooltip" title="Hold Period is awesome!"></i>-->Hold Period</span>
+
+</div >
+<div class="row col-lg-4 col-md-4 col-sm-3 col-xs-3" style="padding-bottom:20px;">
+	<i class="fa fa-clock-o" aria-hidden="true" style="font-size:36px;"></i><br/>
+	<span class="glyphicon glyphicon-info-sign trcorner" style="font-size:100%;color:#000000;top: 0 !important;right: 0 !important;position: absolute !important;" data-toggle="tooltip" title="Min Investment!"></span>
+	<span>39 Days</span><br/>
+	<span id="name">Days Remaining</span>
+</div >
+<div class="row col-lg-4 col-md-4 col-sm-4 col-xs-4" style="padding-bottom:20px;">
+<i class="fa fa-line-chart" aria-hidden="true" style="font-size:36px;"></i><br/>
+	
+	<span class="glyphicon glyphicon-info-sign trcrner" style="font-size:100%;color:#000000;top: 0 !important;right: 0 !important;position: absolute !important;" data-toggle="tooltip" title="Project Returns are calculated on some facts!"></span>
+	<span>7.5%</span><br/>
+	<span id="name">Projected Returns</span>
+</div >
+<hr/>
+</div>
+</div>	
+<div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12" style="color:black; background:#ed4933;">
+<a href="#" class="btn btn-default col-lg-12" style="color:#fff; background:#ed4933;  border:transparent;">Invest Now</a>
+	</div>
+
+
+	
+</div>
+
+<!--
+<div class="col-lg-5 col-md-8 col-sm-8 col-xs-12">
+</div>
+-->
+
+						</section>
 	<!-- Main -->
 
 
-
-						<section id="intro" class="intro"  >
-						<div class="inner">
-							<h2>VBHC Greenwoods Palghar</h2>
-							<p>The funds are being raised for the purchase of a 1-BHK flat at VBHC, Palghar(E).</p>
+<!-- 
+						<section id="intro" class="intro">
+						<div class="container">
+						<div class="row">
+							<h2 class="title-h6">VBHC Greenwoods Palghar</h2><!-- PROPERTY NAME HERE-->
+	<!--						<p class="title-h6">The funds are being raised for the purchase of a 1-BHK flat at VBHC, Palghar(E).</p><!-- PROPERTY DESC -->
+	<!--					</div>
 						</div>
+<br />
+<br />
+						<div class="container">
+						<div class="row">
 
-<div class="col-lg-2 pull-right">
-&nbsp;
+<div class="col-lg-5 ">
+<div class="text-center">
+<br />
+<br />
+<br />
+<a class="btn btn-skin">PROPERTY TYPE: RESIDENTIAL </a>&nbsp;
+<br />
+<br />
+<br />
 </div>
-<div class="col-lg-4 pull-right" style="background-color:whitesmoke; padding:0px;">
+</div>
+
+
+<div class="col-lg-5 " style="background-color:whitesmoke; padding:0px;">
 <div class="row col-lg-12" style="color:black;">
 <div class="progress" style="border-radius:0px">
     <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%; background-color:#ed4933;">
@@ -65,7 +193,6 @@ $(document).ready(function(){
 
 </div >
 <hr/>
-<div class="row col-lg-12" style="color:black;">
 <div class="row col-lg-4">
 	<i class="fa fa-calendar" aria-hidden="true" style="font-size:36px;" data-toggle="tooltip" title="Hold Period is awesome!"></i><br/>
 <span id="number" class="numberstyle">32 Months</span><br/>
@@ -97,14 +224,21 @@ $(document).ready(function(){
 </div>
 
 	</div>
+	
+<div class="col-lg-2" >	
+&nbsp;	
 </div>
+</div>
+</div>
+
+<!--
 <div class="row">
 <div class="progress-bar position" data-percent="95" data-duration="10000" ></div>
 	</div>
+-->
 
-
-						</section>
-						
+	<!--					</section>
+-->						
 						
 						<!--DUMMY -->
 						<!--
@@ -195,50 +329,49 @@ $(document).ready(function(){
 	<!-- /Section: howitworks -->
 <!-- END OF DUMMY-->
 						
-						<section  id="offerparams" class="text=center">
+						<section  id="offerparams" class="text-center team boxed-grey" ">
 			<div class="container">
-			<div class="row">
-			<div class="col-xs-6 col-sm-3 col-md-3">
-				 <div class="team boxed-grey">
-                    <div class="inner">
-					<i class="fa fa-clock-o" aria-hidden="true" style="font-size:36px;"></i><br/>
-					<span id="number" class="numberstyle">39 Days</span><br/>
-					<span id="name">Status(Pre-Leased)</span>
+			<div class="row " >
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+				    <div class="inner">
+					<!--<i class="fa fa-clock-o" aria-hidden="true" style="font-size:36px;"></i><br/>-->
+					<h4 class="h-pad">
+					Pre-Leased</h4>
+					
+					<h4 class="h-pad">Rental Status
+					</h4>
                     </div>
-                </div>
-				</div>
+               </div>
 				
-			<div class="col-xs-6 col-sm-3 col-md-3">
-				 <div class="team boxed-grey">
-                    <div class="inner">
-					<i class="fa fa-inr" aria-hidden="true" style="font-size:36px;"></i><br/>
-					<span id="number" class="numberstyle">39 Days</span><br/>
-					<span id="name">Min. Deposit</span>
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+				    <div class="inner">
+					<!--<i class="fa fa-inr" aria-hidden="true" style="font-size:36px;"></i><br/>-->
+					<h4 class="h-pad">
+					<i class="fa fa-inr"></i>6 Lakh</h4>
+					<h4 class="h-pad">
+					DepositAmountPaid</h4>
                     </div>
                 </div>
-				</div>
 
-			<div class="col-xs-6 col-sm-3 col-md-3">
-				 <div class="team boxed-grey">
-                    <div class="inner">
-					<i class="fa fa-clock-o" aria-hidden="true" style="font-size:36px;"></i><br/>
-					<span id="number" class="numberstyle">39 Days</span><br/>
-					<span id="name">Amount Period</span>
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+				    <div class="inner">
+					<!--<i class="fa fa-clock-o" aria-hidden="true" style="font-size:36px;"></i><br/>-->
+					<h4 class="h-pad">
+					<i class="fa fa-inr"></i>1 Lakh</h4>
+					<h4 class="h-pad">
+					MonthlyRentalAmount</h4>
                     </div>
                 </div>
-				</div>
 			
-			<div class="col-xs-6 col-sm-3 col-md-3">
-				 <div class="team boxed-grey">
-                    <div class="inner">
-					<i class="fa fa-line-chart" aria-hidden="true" style="font-size:36px;"></i><br/>
-					<span id="number" class="numberstyle">39 Days</span><br/>
-					<span id="name">Annual Rental Yield</span>
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+				   <div class="inner">
+					<!--<i class="fa fa-line-chart" aria-hidden="true" style="font-size:36px;"></i><br/>-->
+					<h4 class="h-pad">
+					7.5%</h4>
+					<h4 class="h-pad">AnnualRentalYield</h4>
                     </div>
                 </div>
-				</div>
 				
-			</div>
 			</div>
 			</div>
 			</section>
@@ -385,255 +518,53 @@ $(document).ready(function(){
 <div class="slider" align="center" >
    <div class="box col-md-3 col-lg-3">
                         <img src="<?php echo base_url('/property-images/p1.jpg');?>"  width="338" height="179" />
-                        <h2 style="color:red;" align="center" class="up-pad"> <i class="fa fa-inr"></i>25 Lakhs </h2><strong><p>Funded</p></strong>
-                        <table align="center">
-                            <tr>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                            </tr>
-                            <tr>
-                                <td>Ann.Return</td>
-                                <td><hr></td>
-                                <td>15%</td>
-                            </tr>
-                            <tr>
-                                <td>Term</td>
-                                <td><hr></td>
-                                <td>12 mo</td>
-                            </tr>
-                             <tr>
-                                <td>Location</td>
-                                <td><hr></td>
-                                <td>Chicago, IL</td>
-                            </tr>
-                        </table>
+                        <!--<h2 style="color:red;" align="center" class="up-pad"> <i class="fa fa-inr"></i>25 Lakhs </h2><strong><p>Funded</p></strong>-->
                         
 
                 </div>
                 <div class="box col-md-3 col-lg-3">
                         <img src="<?php echo base_url('/property-images/p2.jpg');?>"  width="338" height="179" />
-                        <h2 style="color:red;" align="center" class="up-pad"> <i class="fa fa-inr"></i>50 Lakhs </h2><strong><p>Funded</p></strong>
-                        <table>
-                            <tr>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                            </tr>
-                            <tr>
-                                <td>Ann.Return</td>
-                                <td><hr></td>
-                                <td>12.5%</td>
-                            </tr>
-                            <tr>
-                                <td>Term</td>
-                                <td><hr></td>
-                                <td>36 mo</td>
-                            </tr>
-                             <tr>
-                                <td>Location</td>
-                                <td><hr></td>
-                                <td>Brooklyn, NY</td>
-                            </tr>
-                        </table>
+                        <!--<h2 style="color:red;" align="center" class="up-pad"> <i class="fa fa-inr"></i>50 Lakhs </h2><strong><p>Funded</p></strong>-->
                         
 
                 </div>
                 <div class="box col-md-3 col-lg-3">
                         <img src="<?php echo base_url('/property-images/p3.jpg');?>"  width="338" height="179" />
-                        <h2 style="color:red;" align="center"class="up-pad"> <i class="fa fa-inr"></i>75 Lakhs </h2><strong><p>Funded</p></strong>
-                        <table>
-                            <tr>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                            </tr>
-                            <tr>
-                                <td>Ann.Return</td>
-                                <td><hr></td>
-                                <td>12%</td>
-                            </tr>
-                            <tr>
-                                <td>Term</td>
-                                <td><hr></td>
-                                <td>9 mo</td>
-                            </tr>
-                             <tr>
-                                <td>Location</td>
-                                <td><hr></td>
-                                <td>Atlanta, GA</td>
-                            </tr>
-                        </table>
+                        <!--<h2 style="color:red;" align="center"class="up-pad"> <i class="fa fa-inr"></i>75 Lakhs </h2><strong><p>Funded</p></strong>-->
                         
 
                 </div>
                 <div class="box col-md-3 col-lg-3">
                         <img src="<?php echo base_url('/property-images/p4.jpg');?>"  width="338" height="179" />
-                        <h2 style="color:red;" align="center"class="up-pad"><i class="fa fa-inr"></i>75 Lakhs </h2><strong><p>Funded</p></strong>
-                        <table>
-                            <tr>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                            </tr>
-                            <tr>
-                                <td>Ann.Return</td>
-                                <td><hr></td>
-                                <td>15%</td>
-                            </tr>
-                            <tr>
-                                <td>Term</td>
-                                <td><hr></td>
-                                <td>12 mo</td>
-                            </tr>
-                             <tr>
-                                <td>Location</td>
-                                <td><hr></td>
-                                <td>Chicago, IL</td>
-                            </tr>
-                        </table>
+                        <!--<h2 style="color:red;" align="center"class="up-pad"><i class="fa fa-inr"></i>75 Lakhs </h2><strong><p>Funded</p></strong>-->
                         
 
                 </div>
                 <div class="box col-md-3 col-lg-3">
                         <img src="<?php echo base_url('/property-images/p1.jpg');?>"  width="338" height="179" />
-                        <h2 style="color:red;" align="center" class="up-pad"> <i class="fa fa-inr"></i>1 Crore </h2><strong><p>Funded</p></strong>
-                        <table>
-                            <tr>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                            </tr>
-                            <tr>
-                                <td>Ann.Return</td>
-                                <td><hr></td>
-                                <td>14%</td>
-                            </tr>
-                            <tr>
-                                <td>Term</td>
-                                <td><hr></td>
-                                <td>24 mo</td>
-                            </tr>
-                             <tr>
-                                <td>Location</td>
-                                <td><hr></td>
-                                <td>Washington, DC</td>
-                            </tr>
-                        </table>
+                        <!--<h2 style="color:red;" align="center" class="up-pad"> <i class="fa fa-inr"></i>1 Crore </h2><strong><p>Funded</p></strong>-->
                         
 
                 </div>
                 <div class="box col-md-3 col-lg-3">
               <img src="<?php echo base_url('/property-images/p1.jpg');?>"  width="338" height="179" />
-                        <h2 style="color:red;" align="center" class="up-pad"> <i class="fa fa-inr"></i>1 Crore </h2><strong><p>Funded</p></strong>
-			  <table>
-                            <tr>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                            </tr>
-                            <tr>
-                                <td>Ann.Return</td>
-                                <td><hr></td>
-                                <td>15%</td>
-                            </tr>
-                            <tr>
-                                <td>Term</td>
-                                <td><hr></td>
-                                <td>12 mo</td>
-                            </tr>
-                             <tr>
-                                <td>Location</td>
-                                <td><hr></td>
-                                <td>Chicago, IL</td>
-                            </tr>
-                        </table>
-                        
-
+                        <!--<h2 style="color:red;" align="center" class="up-pad"> <i class="fa fa-inr"></i>1 Crore </h2><strong><p>Funded</p></strong>-->
+			  
                 </div>
                 <div class="box col-md-3 col-lg-3">
                         <img src="<?php echo base_url('/property-images/p6.jpg');?>"  width="338" height="179" />
-                        <h2 style="color:red;" align="center" class="up-pad"> <i class="fa fa-inr"></i>2 Crore </h2><strong><p>Funded</p></strong>
-                        <table>
-                            <tr>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                            </tr>
-                            <tr>
-                                <td>Ann.Return</td>
-                                <td><hr></td>
-                                <td>10%</td>
-                            </tr>
-                            <tr>
-                                <td>Term</td>
-                                <td><hr></td>
-                                <td>12 mo</td>
-                            </tr>
-                             <tr>
-                                <td>Location</td>
-                                <td><hr></td>
-                                <td>Los Angeles, CA</td>
-                            </tr>
-                        </table>
+                        <!--<h2 style="color:red;" align="center" class="up-pad"> <i class="fa fa-inr"></i>2 Crore </h2><strong><p>Funded</p></strong>-->
                         
 
                 </div>
                  <div class="box col-md-3 col-lg-3">
                         <img src="<?php echo base_url('/property-images/p7.jpg');?>"  width="338" height="179" />
-                        <h2 style="color:red;" align="center" class="up-pad"> <i class="fa fa-inr"></i>2.5 Crore </h2><strong><p>Funded</p></strong>
-                        <table>
-                            <tr>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                            </tr>
-                            <tr>
-                                <td>Ann.Return</td>
-                                <td><hr></td>
-                                <td>14%</td>
-                                
-                            </tr>
-                            <tr>
-                                <td>Term</td>
-                                <td><hr></td>
-                                <td>12 mo</td>
-                            </tr>
-                             <tr>
-                                <td>Location</td>
-                                <td><hr></td>
-                                <td>Houston, TX</td>
-                            </tr>
-                        </table>
-                        
-
+                        <!--<h2 style="color:red;" align="center" class="up-pad"> <i class="fa fa-inr"></i>2.5 Crore </h2><strong><p>Funded</p></strong>-->
+              
                 </div>
                  <div class="box col-md-3 col-lg-3">
                         <img src="<?php echo base_url('/property-images/p8.jpg');?>"  width="338" height="179" />
-                        <h2 style="color:red;" align="center" class="up-pad"><i class="fa fa-inr"></i>3 Crore </h2><strong><p>Funded</p></strong>
-                        <table>
-                            <tr>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                            </tr>
-                            <tr>
-                                <td>Ann.Return</td>
-                                <td><hr></td>
-                                <td>10%</td>
-                            </tr>
-                            <tr>
-                                <td>Term</td>
-                                <td><hr></td>
-                                <td>18 mo</td>
-                            </tr>
-                             <tr>
-                                <td>Location</td>
-                                <td><hr></td>
-                                <td>El Paso, TX</td>
-                            </tr>
-							
-                        </table>
+                        <!--<h2 style="color:red;" align="center" class="up-pad"><i class="fa fa-inr"></i>3 Crore </h2><strong><p>Funded</p></strong>-->
                         
 
                 </div>
@@ -795,4 +726,233 @@ $(document).ready(function(){
 								</div>
 								</section>
 
-								
+																
+						<section>
+
+						<div class="heading-about">
+			<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2" >
+					<div class="wow bounceInDown" data-wow-delay="0.4s">
+					<div class="section-heading">
+					<h2 align="center">SPECIFICATIONS</h2>
+					
+
+					</div>
+					</div>
+				</div>
+			</div>
+			</div>
+						</div>
+
+								<div class="container">
+									<div class="row">
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		                                                   &nbsp;
+							            </div>
+                                       
+									    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		                                                   &nbsp;
+							            </div>
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+												<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+															
+															
+															<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" align="center">
+					                                       <img src="<?php echo base_url('images/Carpet.png');?>" style="height:32px;"/><br/>
+									                             <span  id="number" class="numberstyle">244 sq.ft</span> <br/>
+												                <span id="name">Area</span><br/>
+												           
+												             </div>
+
+															<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" align="center">
+						                                    <img src="<?php echo base_url('images/Flooring.png');?>" style="height:32px;"/><br/>
+									                             <span  id="number" class="numberstyle">Ceramic</span> <br/>
+												                <span id="name">Flooring Type</span><br/>
+												              
+												             </div>
+                                                          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" align="center">
+														     <i class="fa fa-tint" aria-hidden="true" style="font-size:32px;"></i> <br/>
+                                                               <span  id="number" class="numberstyle">24 Hrs</span> <br/>
+												                <span id="name">Water</span><br/>
+												             </div>
+												             
+    															<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" align="center">		
+    															<i class="fa fa-bolt" aria-hidden="true" style="font-size:32px;"></i><br/>
+                                                               <span  id="number" class="numberstyle">24 Hrs</span> <br/>
+												                <span id="name">Electricity</span><br/>
+					
+												             </div>
+
+
+															<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" align="center">
+				                                              <img src="<?php echo base_url('images/Floors.png');?>" style="height:32px;"/><br/>
+									                             <span  id="number" class="numberstyle">5/7</span> <br/>
+												                <span id="name">Floors</span><br/>
+												            
+												             </div>
+
+												
+												             </div>
+												
+											
+									    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		                                                   &nbsp;
+							            </div>
+									    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		                                                   &nbsp;
+							            </div>
+															<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="Y/N">
+													        <?php 
+                                                              $assumption="Y";
+                                                              if($assumption=='Y')
+                                                             {
+                                                              echo'												             
+															<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" align="center">
+																				
+                                                            <img src="'. base_url('images/Elevator.png').'" style="height:32px;" /><br/>
+									                             <span  id="number" class="numberstyle">Available</span> <br/>
+												                <span id="name">Lift</span><br/>
+												              </div>
+		
+															';												}
+		                                                    ?>
+												             <?php 
+                                                              $assumption="Y";
+                                                              if($assumption=='Y')
+                                                             {
+                                                              echo'												             
+															<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" align="center">
+																					
+                                                            <img src=" '.base_url('images/Cctv.png').'" style="height:32px;" /><br/>
+									                             <span  id="number" class="numberstyle">Available</span> <br/>
+												                <span id="name">CCTV</span><br/>
+
+												             </div>
+		
+															';												}
+		                                                    ?>
+												            <?php 
+                                                              $assumption="Y";
+                                                              if($assumption=='Y')
+                                                             {
+                                                              echo'												             
+															<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" align="center">
+																				
+                                                                 <img src="'.base_url('images/Parking.png').'" style="height:32px;" /><br/>
+									                             <span  id="number" class="numberstyle">Available</span> <br/>
+												                <span id="name">Parking</span><br/>
+												             </div>
+		
+															';												}
+		                                                    ?>
+												            <?php 
+                                                              $assumption="Y";
+                                                              if($assumption=='Y')
+                                                             {
+                                                              echo'												             
+															<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" align="center">
+																				
+                                                             	
+                                                                 <img src="'. base_url('images/Gym.png').'" style="height:32px;" /><br/>
+									                             <span  id="number" class="numberstyle">Available</span> <br/>
+												                <span id="name">Gym</span><br/>
+												                </div>
+		
+															';												}
+		                                                    ?>
+												            <?php 
+                                                              $assumption="Y";
+                                                              if($assumption=='Y')
+                                                             {
+                                                              echo'												             
+															<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" align="center">
+																				
+                                                             
+                                                                 <img src="'. base_url('images/Miscellaneous.png').'" style="height:32px;" /><br/>
+									                             <span  id="number" class="numberstyle">Available</span> <br/>
+												                <span id="name">Other Facilties</span><br/></div>
+		
+															';												}
+		                                                    ?>
+												            
+												             </div>
+                                                     		
+									    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		                                                   &nbsp;
+							            </div>
+									    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		                                                   &nbsp;
+							            </div>							            
+									          </div>
+											</div>
+										</div>
+									</section>	
+                         <section>
+                         							<div class="heading-about">
+			<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="wow bounceInDown" data-wow-delay="0.4s">
+					<div class="section-heading">
+					<h2 align="center">DOWNLOADS</h2>
+					
+				</div>
+					</div>
+				</div>
+			</div>
+			</div>
+						</div>
+
+								<div class="container">
+									<div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		                                                   &nbsp;
+							            </div>
+                                       
+									    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		                                                   &nbsp;
+							            </div>
+										
+					                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+									        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" align="center">
+													<i class="fa fa-file-pdf-o" aria-hidden="true" style="font-size:32px;"></i><br/>
+							                            <a href="#"><span id="name">Due Diligence Report</span></a>
+									 			             </div>
+												             
+															<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" align="center">
+							                                 	<i class="fa fa-file-pdf-o" aria-hidden="true" style="font-size:32px;"></i><br/>
+														          <a href="#"><span id="name">Product Disclosure Statement</span></a>
+									 			        						
+												             </div>
+
+															<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" align="center">
+                                                             	<i class="fa fa-file-pdf-o" aria-hidden="true" style="font-size:32px;"></i><br/>
+														         <a href="#"><span id="name">Building Certificates</span></a>
+									 			        													
+												             </div>
+ 
+							   								<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" align="center">
+																				<i class="fa fa-file-pdf-o" aria-hidden="true" style="font-size:32px;"></i><br/>
+								                                         <a href="#"><span id="name">Brochure</span></a>
+									 			        
+												             </div>
+												             
+															<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" align="center">
+							                                    	<i class="fa fa-file-pdf-o" aria-hidden="true" style="font-size:32px;"></i><br/>
+														            <a href="#"><span id="name">Miscellaneous Documents</span></a>
+									 			        						
+												             </div>
+                                             </div>
+                                           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		                                                   &nbsp;
+							            </div>
+                                       
+									    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		                                                   &nbsp;
+							            </div>
+										
+                                             </div>
+                                             </div>
+                                         </section>
