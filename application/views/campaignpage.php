@@ -20,8 +20,28 @@ span#number{
      font-size: 20px;
      font-weight: 500;
 }
+#section-colors-left {
+    position: fixed;
+    width: 10em;
+    /* height: 0px; */
+    top: 5em;
+    background: #f9f9f9;
+    color: #565555;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    z-index: 10021;
+    transition: all 0.2s;
+}
 
-	
+.color-panel-left .color-wrap-left {
+    overflow: hidden;
+    margin: auto;
+    margin-top: 0.5em;
+    width: 90%;
+}
+
+
+<!--STYLING OF IBTRO BACKGROUND PENDING -->	
 	
 	
 	
@@ -35,6 +55,12 @@ $(document).ready(function(){
 
 	
 	</head>
+	<section id="section-colors-left" class="color-panel-left panel-open-left center" style="opacity: .8;">
+			<div class="color-wrap-left">
+				<p style="color:#000;"><b><span id="numberofpeople" style="color: #000000">7</span></b> People are viewing this offer right now!</p>
+			</div>
+		</section>
+
 
 
 
@@ -434,13 +460,13 @@ $(document).ready(function(){
 									</div>
 									</section>
 									
-									<section id="locanddemo" class="home-section text-center">
+									<section id="locanddemo" class="home-section">
 						<div class="heading-about">
 			<div class="container">
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2">
 					<div class="wow bounceInDown" data-wow-delay="0.4s">
-					<div class="section-heading">
+					<div class="section-heading text-center">
 					<h2>LOCATION AND DEMOGRAPHY</h2>
 					
 					<i class="fa fa-2x fa-angle-down"></i>
@@ -453,17 +479,66 @@ $(document).ready(function(){
 		</div>
 							   <div class="container">
 
-								<div class="row">
+								<div class="row text-center" >
 	
 								<h5>A representation of LOCATION and DEMOGRAPHY of the property</h5>
-						
+								</div>
+								</div>
+											   <div class="container" >
+										<div class="row" style="display:flex;">
+										
+										<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="flex:1;" >
+						<!--<div width="100%" height="260px" id="googleMap"></div>		
+						<script src="http://maps.googleapis.com/maps/api/js"> </script>
+							<script>
+							var myCenter=new google.maps.LatLng(19.110433,72.888191);
+							function initialize()
+							{
+							var mapProp = {
+							  center:myCenter,
+							  zoom:18,
+							  mapTypeId:google.maps.MapTypeId.ROADMAP
+							  };
+
+							var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+							var marker=new google.maps.Marker({
+							  position:myCenter,
+							  });
+
+							marker.setMap(map);
+
+							var infowindow = new google.maps.InfoWindow({
+							  content:"PropChunk CrowdInvesting"
+							  });
+
+							infowindow.open(map,marker);
+							}
+
+							google.maps.event.addDomListener(window, 'load', initialize);
+							
+							</script>
+							-->
+							
+						    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDiJ_tvkr37H6OJ1Thb7A6AZcEffkNxBjs'></script><div style=''><div id='gmap_canvas' style='height:580px;width:100%;'></div>
+							<style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div>
+							<script type='text/javascript'>function init_map(){var myOptions = {zoom:13,center:new google.maps.LatLng(19.0948958,72.88652479999996),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(19.0948958,72.88652479999996)});infowindow = new google.maps.InfoWindow({content:'<strong>PropChunk CrowdInvesting</strong><br>Sakinaka<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="display:flex;">
+							<div id="desc">
 							<p>
-					As of 2011 India census, Palghar had a population of 68,930 Males constitute 36,523 i.e. 52.9% of the population and females 32,407 i.e. 47.1% of the population. Palghar has an average literacy rate of 77.52%, higher than the national average of 59.5%: male literacy is 81.2%, and female literacy is 73.35%. In Palghar, 11.8% of the population is under 6 years of age.
-				The site is located at Phase 3, VBHC GreenWoods, Palghar District which is 4 kms from Palghar railway station, 7 kms from Umroli station. It is also near to St. John’s college, school, and proposed Delhi-Mumbai Industrial corridor.
+							<b>LOCALITYNAME</b><br/>:Lorem ipsum dolor sit amet, consectetuer adipiscin<br/><br/>
+							<b>LOCALITYDESCRIPTION</b><br/>:The site is located at Phase 3, VBHC GreenWoods, Palghar District which is 4 kms from Palghar railway station, 7 kms from Umroli station. <br/>It is also near to St. John’s college, school, and proposed Delhi-Mumbai Industrial corridor.<br/><br/>
+							<b>LOCALITYPOPULATION</b><br/>:Lorem ipsum dolor sit amet, consectetuer adipiscin<br/><br/>
+							<b>LOCALITYTRANSPORTATION</b><br/>:Lorem ipsum dolor sit amet, consectetuer adipiscin<br/><br/>
+							<b>LOCALITYSCHOOLCOLLEGE</b><br/>:Lorem ipsum dolor sit amet, consectetuer adipiscin<br/><br/>
+							<b>LOCALITYNEARBYEATERIES</b><br/>:Lorem ipsum dolor sit amet, consectetuer adipiscin<br/><br/>
+							<b>LOCALITYNEARBYLEISURESPOTS</b><br/>:Lorem ipsum dolor sit amet, consectetuer adipiscin<br/><br/>
 							</p>
-
-						<img src="img/geography1.png" width="100%" height="100%">
-
+							</div>
+							</div>
+											
+						<!--
 								<p>
 						For a town its size, Palghar is surprisingly cosmopolitan. Being a border town between Gujarat and Maharashtra and being close to Mumbai, it has a good percentage of population of people from other parts of country besides Maharashtra and Gujarat like Rajasthan, Kerala and North India.
 						The site is well within the prestigious St. John’s Engineering College which ranks as one of the best Engineering colleges in Mumbai outskirts. VBHC’s Palghar project and surrounding properties have been known to fetch a significant premium among investors due to its desirable location. Palghar also got converted into a district recently and it is a connecting district between Mumbai and Gujarat.</p>
@@ -474,7 +549,7 @@ $(document).ready(function(){
 						Most of the rich landlords of Palghar made their money trading grass to the dairies in Mumbai. Grass trading is a major occupation of many families in Palghar. The town is also close to an industrial complex, located at Boisar and India's first nuclear power plant, located at Tarapur.
 						Industrialization is gradually changing the face of Palghar. The town is getting a make-over of sorts due to Industrialization. Palghar's youth is getting employment in the small scale and medium scale industries coming up in and around the area. In the olden days agriculture was one of the main source of livelihood, but industrialization has opened up new avenues for them. With space and infrastructure constraints in Mumbai proper, Vasai, Boisar - Palghar proves to be the leading avenue in Western suburbs for setting up new industry / expansion purposes. 
 						</p>
-
+						-->
 					     
 
 						 </div>
@@ -512,7 +587,7 @@ $(document).ready(function(){
 
 									
 						</div>
-						</div>						
+						</div>
 						</section>
 								
 <div class="slider" align="center" >
@@ -669,7 +744,7 @@ $(document).ready(function(){
 				<div class="col-lg-8 col-lg-offset-2">
 					<div class="wow bounceInDown" data-wow-delay="0.4s">
 					<div class="section-heading">
-					<h2>WHAT ARE YOU WAITING FOR ?</h2>
+					<h2 class="title-h6">WHAT ARE YOU WAITING FOR ?</h2>
 					
 					<i class="fa fa-2x fa-angle-down"></i>
 
@@ -682,7 +757,7 @@ $(document).ready(function(){
 							
 							<div class="container">
 							<div class="row">
-							<p><i>You don't become rich by saving, you become rich by investing.</i> With our curated deals in growing geographies, you can be a property owner too. </p>
+							<p class="title-h6"><i>You don't become rich by saving, you become rich by investing.</i> With our curated deals in growing geographies, you can be a property owner too. </p>
 							<ul class="" style="list-style:none;">
 							<li>
 							<br/>					 
@@ -726,9 +801,197 @@ $(document).ready(function(){
 								</div>
 								</section>
 
-																
-						<section>
+								
+						<section id="appreciationchart" class="home-section">
+						<div class="heading-about">
+			<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="wow bounceInDown" data-wow-delay="0.4s">
+					<div class="section-heading text-center">
+					<h2>APPRECIATION CHART</h2>
+					
+					<i class="fa fa-2x fa-angle-down"></i>
 
+					</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>	
+							<div class="container">
+
+								<div class="row">
+								<div id="chartContainer" style="height: 360px; width: 100%;"></div>
+							<script src="http://canvasjs.com/assets/script/canvasjs.min.js"></script>
+								<script>
+							//Creating a multi-series line graph from 2 sets of data. Namely dps1 and dps2.
+
+var dps1 = [{
+  x: 2012,
+  y: 4000
+}, {
+  x: 2013,
+  y: 5000
+}, {
+  x: 2014,
+  y: 4500
+}, {
+  x: 2015,
+  y: 4800
+}, {
+  x: 2016,
+  y: 5000
+}]; //dataPoints – line 1
+/*var dps2 = [{
+  x: 1,
+  y: 15
+}, {
+  x: 2,
+  y: 28
+}, {
+  x: 3,
+  y: 42
+}];
+*/ //dataPoints. – line 2
+
+var chart = new CanvasJS.Chart("chartContainer", {
+  title: {
+    text: "APPRECIATION OVER PAST FEW YEARS"
+  },
+  axisX: {
+    title: "YEARS",
+	minimum:2011,
+	interval:1
+  },
+  axisY: {
+    title: "COST PER SQ.FT",
+	gridColor:"light-gray",
+	minimum:3000,
+	interval:1000
+  },
+
+  // begin data for 2 line graphs. Note dps1 and dps2 are
+  //defined above as a json object. See http://www.w3schools.com/json/
+  data: [{
+      type: "line",
+      dataPoints: dps1
+    } /*, {
+      type: "line",
+      dataPoints: dps2
+    }*/
+	]
+    // end of data for 2 line graphs
+
+}); // End of new chart variable
+
+chart.render();
+
+							</script>
+							
+						</div>
+						<div class="container">
+								<div class="row">
+								<div class="">
+								<br/>
+								<br />
+								<p>In the last two years,the commercial properties of the locality has been appreciating at the rate of -LOCALITYAPPRECIATION- %</p>
+								
+								</div>
+								</div>
+								</div>
+								
+						</section>
+		
+								
+						<section id="builderinfo" class="home-section">
+						<div class="heading-about">
+			<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="wow bounceInDown" data-wow-delay="0.4s">
+					<div class="section-heading text-center">
+					<h2>BUILDER INFO</h2>
+					
+					<i class="fa fa-2x fa-angle-down"></i>
+
+					</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>	
+							<div class="container">
+
+								<div class="row">
+								<div class="col-xs-12 col-lg-4 col-md-4 col-sm-4">
+							<h5><img src="http://localhost/dev.propchunk.com/property-images/ubuntu.png"></h5>
+							
+						</div>
+						<div class="col-xs-12 col-lg-8 col-md-6 col-sm-8">
+							<h4>BuilderName,BuilderCity,BuilderState,
+							<br/>
+							BuilderInYrs : 9 Yrs</h4>
+							<p><b>BuilderDescriptionCompany:</b><br />Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibu<br /><br />
+							<b>DescriptionDescriptionPromoter :</b><br />Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibu <br/><br />
+							<b>Builder Description Past Projects :</b><br /> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibu<br /><br /> 
+							</p>
+						</div>
+						</div>
+						<!--
+						<div class="container">
+								<div class="row">
+								<div class="col-xs-12 col-sm-12 col-md-12">
+								
+							
+								</div>
+								</div>
+								</div>
+						-->		
+						</section>
+		
+						
+						<!-- SHRINATHS  WORK -->
+						<section>
+                         							<div class="heading-about">
+			<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="wow bounceInDown" data-wow-delay="0.4s">
+					<div class="section-heading">
+					<h2 align="center">Investment Highlights</h2>
+					
+				</div>
+					</div>
+				</div>
+			</div>
+			</div>
+						</div>
+
+
+								<div class="container">
+									<div class="row">
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		                                                   &nbsp;
+							            </div>
+                                       
+									    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		                                                   &nbsp;
+							            </div>
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+												<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+															
+										                                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-11" id="data">
+										                                      
+										                                      </div>
+                                                </div>
+                     </div>
+             </div>
+         </div>
+</section>
+
+						
 						<div class="heading-about">
 			<div class="container">
 			<div class="row">
@@ -954,5 +1217,98 @@ $(document).ready(function(){
 							            </div>
 										
                                              </div>
+											 <div class="row text-center" id="escroll">
+											<svg id="animated" viewbox="0 0 100 100" width="12%">
+  <circle cx="50" cy="50" r="45"   fill="#ccc"/>
+  <path id="progress" stroke-linecap="round" stroke-width="5" stroke="red" fill="none"
+        d="M50 10
+           a 40 40 0 0 1 0 80
+           a 40 40 0 0 1 0 -80">
+  </path>
+  <text id="count" x="50" y="50" text-anchor="middle" dy="7" font-size="20">100%</text>
+</svg>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js'></script>
+
+
+        <script src="<?php echo base_url('/assets/js/rfc.js');?>")></script>
+		
+										    
+											 </div>
                                              </div>
                                          </section>
+										 
+										 <script>
+
+    var str = "Less than Market Price:Rs 7900 PSF.?Appreciating Locality:10% in the last 7years.?Guarenteed Day 1 Rentals:Pre-Leased property.?Higher than average rental yield:7.3% PA after expenses.?Property Percentage Occupancy:95%.? !5";
+    var str1= str.split("!");
+    var x=str1[1];
+
+var i=1;
+for(i=0;i<x;i++)
+{
+
+   var res1=str.split(".?",x)
+    var res2=res1[i].split(":",x);
+
+var mdiv = document.createElement('div');
+mdiv.setAttribute('class', 'col-lg-12');
+mdiv.id = 'block'+i;
+
+
+var div = document.createElement('div');
+div.setAttribute('class', 'col-lg-12 ');
+div.id = 'block'+i;
+div.innerHTML='<span id="name">'+res2[0]+":"+'</span>'+" "+res2[1]+".";
+
+
+document.getElementById("data").appendChild(mdiv);  
+document.getElementById(mdiv.id).appendChild(div);
+
+}
+
+</script>
+			<script>
+							$('.count').each(function () {
+				    $(this).prop('Counter',0).animate({
+				        Counter: $(this).text()
+				    }, {
+				        duration: 4000,
+				        easing: 'swing',
+				        step: function (now) {
+				            $(this).text(Math.ceil(now));
+				        }
+				    });
+				});
+
+
+
+		$(function () {
+		var d = new Date();
+		var n = d.getHours();
+		if(n>=6){
+			var y = (Math.floor(Math.random() * 15) + 5);
+			$('#numberofpeople').html(y);
+			window.setInterval(function(){
+				$('#section-colors-left').removeClass('panel-close-left');
+				$('#section-colors-left').addClass('panel-open-left');
+				var y = (Math.floor(Math.random() * 15) + 5);
+				$('#numberofpeople').html(y);
+				// document.getElementById("numberofpeople").innerHTML = y;
+			},60000);
+		}else{
+			$('#section-colors-left').toggleClass('panel-open-left panel-close-left');
+		}
+		var mq = window.matchMedia("(min-width: 1140px)");
+		if(mq.matches){
+		}else{
+			$('#section-colors').addClass('hide');
+			$('#section-colors-left').addClass('hide');
+			$('#containernav').removeClass('container');
+			$('#containernav').addClass('container-fluid');
+		}
+	});
+			</script>
+
+										 
+										 
