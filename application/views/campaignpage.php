@@ -5,11 +5,15 @@
 	}
 	.change-color{
 		color:white !important;
-		
+
 	.home-section{
 		padding-bottom:0px !important;
 	}
+	}
 	
+.mdiv{
+	padding-top: 30px;
+}
 span#name{
   font-weight: 700;
 padding-top: 5px;
@@ -41,8 +45,28 @@ span#number{
 }
 
 
-<!--STYLING OF IBTRO BACKGROUND PENDING -->	
+<?php 
+
+echo".intro {
+	width:100%;
+	position:relative;
 	
+	/*background: url(/dev.propchunk.com/images/banner.jpg) no-repeat top center;*/
+	padding: 12em 0 10em 0 ;
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.30), rgba(0,0,0,0.15)), url(/dev.propchunk.com/images/1.jpg) !Important;
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.30), rgba(0,0,0,0.15)), url(/dev.propchunk.com/images/1.jpg) !Important;
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.30), rgba(0,0,0,0.15)), url(/dev.propchunk.com/images/1.jpg) !Important;
+		background-image: linear-gradient(top, rgba(0,0,0,0.30), rgba(0,0,0,0.15)), url(/dev.propchunk.com/images/1.jpg) !Important;
+		background-attachment: fixed;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		text-align: center;
+}";?>
+
+
+<!--STYLING OF IBTRO BACKGROUND PENDING -->	
+
 	
 	
 	
@@ -64,7 +88,7 @@ $(document).ready(function(){
 
 
 
-<section id="intro" class="intro "  >
+<section id="intro" class="intro"  >
 						<div class="inner change-color">
 					<h2 class="title-h6">VBHC Greenwoods Palghar</h2><!-- PROPERTY NAME HERE-->
 	                <p class="title-h6">The funds are being raised for the purchase of a 1-BHK flat at VBHC, Palghar(E).</p><!-- PROPERTY DESC -->	</div>
@@ -403,8 +427,66 @@ $(document).ready(function(){
 			</section>
 						
 					
+							
+<div class="slider" align="center" >
+   <div class="box col-md-3 col-lg-3">
+                        <img src="<?php echo base_url('/property-images/p1.jpg');?>"  width="338" height="179" />
+                        <!--<h2 style="color:red;" align="center" class="up-pad"> <i class="fa fa-inr"></i>25 Lakhs </h2><strong><p>Funded</p></strong>-->
+                        
 
-<!--offer details -->					
+                </div>
+                <div class="box col-md-3 col-lg-3">
+                        <img src="<?php echo base_url('/property-images/p2.jpg');?>"  width="338" height="179" />
+                        <!--<h2 style="color:red;" align="center" class="up-pad"> <i class="fa fa-inr"></i>50 Lakhs </h2><strong><p>Funded</p></strong>-->
+                        
+
+                </div>
+                <div class="box col-md-3 col-lg-3">
+                        <img src="<?php echo base_url('/property-images/p3.jpg');?>"  width="338" height="179" />
+                        <!--<h2 style="color:red;" align="center"class="up-pad"> <i class="fa fa-inr"></i>75 Lakhs </h2><strong><p>Funded</p></strong>-->
+                        
+
+                </div>
+                <div class="box col-md-3 col-lg-3">
+                        <img src="<?php echo base_url('/property-images/p4.jpg');?>"  width="338" height="179" />
+                        <!--<h2 style="color:red;" align="center"class="up-pad"><i class="fa fa-inr"></i>75 Lakhs </h2><strong><p>Funded</p></strong>-->
+                        
+
+                </div>
+                <div class="box col-md-3 col-lg-3">
+                        <img src="<?php echo base_url('/property-images/p1.jpg');?>"  width="338" height="179" />
+                        <!--<h2 style="color:red;" align="center" class="up-pad"> <i class="fa fa-inr"></i>1 Crore </h2><strong><p>Funded</p></strong>-->
+                        
+
+                </div>
+                <div class="box col-md-3 col-lg-3">
+              <img src="<?php echo base_url('/property-images/p1.jpg');?>"  width="338" height="179" />
+                        <!--<h2 style="color:red;" align="center" class="up-pad"> <i class="fa fa-inr"></i>1 Crore </h2><strong><p>Funded</p></strong>-->
+			  
+                </div>
+                <div class="box col-md-3 col-lg-3">
+                        <img src="<?php echo base_url('/property-images/p6.jpg');?>"  width="338" height="179" />
+                        <!--<h2 style="color:red;" align="center" class="up-pad"> <i class="fa fa-inr"></i>2 Crore </h2><strong><p>Funded</p></strong>-->
+                        
+
+                </div>
+                 <div class="box col-md-3 col-lg-3">
+                        <img src="<?php echo base_url('/property-images/p7.jpg');?>"  width="338" height="179" />
+                        <!--<h2 style="color:red;" align="center" class="up-pad"> <i class="fa fa-inr"></i>2.5 Crore </h2><strong><p>Funded</p></strong>-->
+              
+                </div>
+                 <div class="box col-md-3 col-lg-3">
+                        <img src="<?php echo base_url('/property-images/p8.jpg');?>"  width="338" height="179" />
+                        <!--<h2 style="color:red;" align="center" class="up-pad"><i class="fa fa-inr"></i>3 Crore </h2><strong><p>Funded</p></strong>-->
+                        
+
+                </div>
+				
+        </div>				
+
+					
+<!--offer details -->	
+<!--				
 						<section  id="offerdetails" class="home-section text-center">
 						<div class="heading-about">
 			<div class="container">
@@ -441,13 +523,14 @@ $(document).ready(function(){
 		   <br />
 		   
 		   <!-- SCRIPT FOR TYPEFORM -->
-		   <script>
+<!--		 
+		 <script>
 		   (function(){
 			   var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'main.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()
 		   </script>
 			
 			<!-- -->
-			<p style="font-size: 100%">
+<!--			<p style="font-size: 100%">
 			You will get a copy of Product Disclosure Statement (PDS)/Offer Document, our official document enlisting all details about this Fractional Ownership campaign.
 
 		   <br/><br/>* Note: this is a <i>No Obligation Expression of interest</i>, you get to review the document before making any decisions
@@ -459,8 +542,9 @@ $(document).ready(function(){
 									</div>
 									</div>
 									</section>
-									
-									<section id="locanddemo" class="home-section">
+	-->
+	
+						<section id="locanddemo" class="home-section">
 						<div class="heading-about">
 			<div class="container">
 			<div class="row">
@@ -527,13 +611,13 @@ $(document).ready(function(){
 							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="display:flex;">
 							<div id="desc">
 							<p>
-							<b>LOCALITYNAME</b><br/>:Lorem ipsum dolor sit amet, consectetuer adipiscin<br/><br/>
-							<b>LOCALITYDESCRIPTION</b><br/>:The site is located at Phase 3, VBHC GreenWoods, Palghar District which is 4 kms from Palghar railway station, 7 kms from Umroli station. <br/>It is also near to St. John’s college, school, and proposed Delhi-Mumbai Industrial corridor.<br/><br/>
-							<b>LOCALITYPOPULATION</b><br/>:Lorem ipsum dolor sit amet, consectetuer adipiscin<br/><br/>
-							<b>LOCALITYTRANSPORTATION</b><br/>:Lorem ipsum dolor sit amet, consectetuer adipiscin<br/><br/>
-							<b>LOCALITYSCHOOLCOLLEGE</b><br/>:Lorem ipsum dolor sit amet, consectetuer adipiscin<br/><br/>
-							<b>LOCALITYNEARBYEATERIES</b><br/>:Lorem ipsum dolor sit amet, consectetuer adipiscin<br/><br/>
-							<b>LOCALITYNEARBYLEISURESPOTS</b><br/>:Lorem ipsum dolor sit amet, consectetuer adipiscin<br/><br/>
+							<b>LOCALITYNAME :</b><br/>Lorem ipsum dolor sit amet, consectetuer adipiscin<br/><br/>
+							<b>LOCALITYDESCRIPTION :</b><br/>The site is located at Phase 3, VBHC GreenWoods, Palghar District which is 4 kms from Palghar railway station, 7 kms from Umroli station. <br/>It is also near to St. John’s college, school, and proposed Delhi-Mumbai Industrial corridor.<br/><br/>
+							<b>LOCALITYPOPULATION :</b><br/>Lorem ipsum dolor sit amet, consectetuer adipiscin<br/><br/>
+							<b>LOCALITYTRANSPORTATION :</b><br/>Lorem ipsum dolor sit amet, consectetuer adipiscin<br/><br/>
+							<b>LOCALITYSCHOOLCOLLEGE :</b><br/>Lorem ipsum dolor sit amet, consectetuer adipiscin<br/><br/>
+							<b>LOCALITYNEARBYEATERIES :</b><br/>Lorem ipsum dolor sit amet, consectetuer adipiscin<br/><br/>
+							<b>LOCALITYNEARBYLEISURESPOTS :</b><br/>Lorem ipsum dolor sit amet, consectetuer adipiscin<br/><br/>
 							</p>
 							</div>
 							</div>
@@ -557,251 +641,6 @@ $(document).ready(function(){
 								</section>
 			
 			
-			
-			<section id="dealprocess" class="home-section text-center">
-						<div class="heading-about">
-			<div class="container">
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2">
-					<div class="wow bounceInDown" data-wow-delay="0.4s">
-					<div class="section-heading">
-					<h2>DEAL PROCESS</h2>
-					
-					<i class="fa fa-2x fa-angle-down"></i>
-
-					</div>
-					</div>
-				</div>
-			</div>
-			</div>
-		</div>	
-							<div class="container">
-
-								<div class="row">
-							<h5>A simplified representation of how this deal will work out.</h5>
-							<p>A Special Purpose Vehicle (SPV) will be established by the Chunk Technologies Pvt. Ltd. to undertake the cost of Development in a Phase 3 of VBHC in Palghar East. The SPV has the rights to purchase and sell the land.</p>
-						<img src="img/process.png" width="100%" height="100%">
-						</p>
-						
-					
-
-									
-						</div>
-						</div>
-						</section>
-								
-<div class="slider" align="center" >
-   <div class="box col-md-3 col-lg-3">
-                        <img src="<?php echo base_url('/property-images/p1.jpg');?>"  width="338" height="179" />
-                        <!--<h2 style="color:red;" align="center" class="up-pad"> <i class="fa fa-inr"></i>25 Lakhs </h2><strong><p>Funded</p></strong>-->
-                        
-
-                </div>
-                <div class="box col-md-3 col-lg-3">
-                        <img src="<?php echo base_url('/property-images/p2.jpg');?>"  width="338" height="179" />
-                        <!--<h2 style="color:red;" align="center" class="up-pad"> <i class="fa fa-inr"></i>50 Lakhs </h2><strong><p>Funded</p></strong>-->
-                        
-
-                </div>
-                <div class="box col-md-3 col-lg-3">
-                        <img src="<?php echo base_url('/property-images/p3.jpg');?>"  width="338" height="179" />
-                        <!--<h2 style="color:red;" align="center"class="up-pad"> <i class="fa fa-inr"></i>75 Lakhs </h2><strong><p>Funded</p></strong>-->
-                        
-
-                </div>
-                <div class="box col-md-3 col-lg-3">
-                        <img src="<?php echo base_url('/property-images/p4.jpg');?>"  width="338" height="179" />
-                        <!--<h2 style="color:red;" align="center"class="up-pad"><i class="fa fa-inr"></i>75 Lakhs </h2><strong><p>Funded</p></strong>-->
-                        
-
-                </div>
-                <div class="box col-md-3 col-lg-3">
-                        <img src="<?php echo base_url('/property-images/p1.jpg');?>"  width="338" height="179" />
-                        <!--<h2 style="color:red;" align="center" class="up-pad"> <i class="fa fa-inr"></i>1 Crore </h2><strong><p>Funded</p></strong>-->
-                        
-
-                </div>
-                <div class="box col-md-3 col-lg-3">
-              <img src="<?php echo base_url('/property-images/p1.jpg');?>"  width="338" height="179" />
-                        <!--<h2 style="color:red;" align="center" class="up-pad"> <i class="fa fa-inr"></i>1 Crore </h2><strong><p>Funded</p></strong>-->
-			  
-                </div>
-                <div class="box col-md-3 col-lg-3">
-                        <img src="<?php echo base_url('/property-images/p6.jpg');?>"  width="338" height="179" />
-                        <!--<h2 style="color:red;" align="center" class="up-pad"> <i class="fa fa-inr"></i>2 Crore </h2><strong><p>Funded</p></strong>-->
-                        
-
-                </div>
-                 <div class="box col-md-3 col-lg-3">
-                        <img src="<?php echo base_url('/property-images/p7.jpg');?>"  width="338" height="179" />
-                        <!--<h2 style="color:red;" align="center" class="up-pad"> <i class="fa fa-inr"></i>2.5 Crore </h2><strong><p>Funded</p></strong>-->
-              
-                </div>
-                 <div class="box col-md-3 col-lg-3">
-                        <img src="<?php echo base_url('/property-images/p8.jpg');?>"  width="338" height="179" />
-                        <!--<h2 style="color:red;" align="center" class="up-pad"><i class="fa fa-inr"></i>3 Crore </h2><strong><p>Funded</p></strong>-->
-                        
-
-                </div>
-				
-        </div>				
-				
-				<section id="invprocess" class="home-section text-center">
-						<div class="heading-about">
-			<div class="container">
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2">
-					<div class="wow bounceInDown" data-wow-delay="0.4s">
-					<div class="section-heading">
-					<h2>INVESTMENT PROCESS</h2>
-					
-					<i class="fa fa-2x fa-angle-down"></i>
-
-					</div>
-					</div>
-				</div>
-			</div>
-			</div>
-		</div>	
-		
-									<div class="container">
-									<div class="row">
-		
-								<h5>A simplified representation of how much stake you can have</h5>
-		<p>In return of investment the net profits or net proceeds of a Special Purpose Vehicle will be distributed to the Purchaser in accordance to the amount invested. For example If you invest Rs. 10L in a property worth Rs. 1 Cr., you are entitled to receiving the 10% share of the net income the property makes in the duration of the your investment.Select a value and know your share !							
-		<br />							
-		
-		
-									<div align ="center">			
-
-									<span id="in"> <br /></span>
-									<br />
-									<input id ="slider1" type="range" min="100000" max="1900000" value="0" step="50000" onchange="inWords(this.value) "  style="cursor:e-resize"/>
-									<br >
-									<br >
-									<span id="out">Select Some Investment Amount</span>
-									<br>
-									</div>
-									<!-- SCRIPT FOR SLIDER -->
-									<script type="text/javascript">
-										
-									var a = ['0','1','2','3','4','5','6','7','8','9','10', '11', '12', '13', '14', '15', '16', '17', '18', '19'];
-									var b = ['','', '2','3','4','5','6','7','8','9'];
-
-									function inWords (num) {
-										if ((num = num.toString()).length > 9) return 'overflow';
-										n = ('000000000' + num).substr(-9).match(/^(\d{2})(\d{2})(\d{2})(\d{1})(\d{2})$/);
-										if (!n) return; var str = '';
-										str += (n[1] != 0) ? (a[Number(n[1])] || b[n[1][0]] +  a[n[1][1]]) + ' Cr.' : '';
-										str += (n[2] != 0) ? (a[Number(n[2])] || b[n[2][0]] +  a[n[2][1]]) + ' Lacs ' : '';
-										str += (n[3] != 0) ? (a[Number(n[3])] || b[n[3][0]]  + a[n[3][1]]) + ' Thousand ' : '';
-										str += (n[4] != 0) ? (a[Number(n[4])] || b[n[4][0]] + a[n[4][1]]) + 'hundred ' : '';
-										str += (n[5] != 0) ? ((str != '') ? 'and ' : '') + (a[Number(n[5])] || b[n[5][0]] + ' ' + a[n[5][1]]) + 'only ' : '';
-										
-										document.getElementById("in").innerHTML= "<br /> Amount Invested : " + str + "<br />";
-										
-										var maxValue = document.getElementById("slider1").getAttribute("max");
-										
-										var oldValue = num;
-										
-										num =  (num*100)/maxValue;
-										
-										num = num.toPrecision(4);
-										
-									    document.getElementById("out").innerHTML= "Percentage Ownership : " + num + "%";
-
-									}	
-	
-	
-								</script>
-
-
-
-							</div>
-							</div>
-							</div>
-							
-						</section>
-						
-				
-
-				<!-- Call To Action -->
-				
-					<section id="cta" class="home-section text-center" style="
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/dev.propchunk.com/images/banner.jpg) !Important;
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/dev.propchunk.com/images/banner.jpg) !Important;
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/dev.propchunk.com/images/banner.jpg) !Important;
-		background-image: linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/dev.propchunk.com/images/banner.jpg) !Important;
-		background-attachment: fixed;
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-size: cover;
-					" 
-					>
-							<div class="heading-about">
-			<div class="container">
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2">
-					<div class="wow bounceInDown" data-wow-delay="0.4s">
-					<div class="section-heading">
-					<h2 class="title-h6">WHAT ARE YOU WAITING FOR ?</h2>
-					
-					<i class="fa fa-2x fa-angle-down"></i>
-
-					</div>
-					</div>
-				</div>
-			</div>
-			</div>
-		</div>	
-							
-							<div class="container">
-							<div class="row">
-							<p class="title-h6"><i>You don't become rich by saving, you become rich by investing.</i> With our curated deals in growing geographies, you can be a property owner too. </p>
-							<ul class="" style="list-style:none;">
-							<li>
-							<br/>					 
-						<a class="btn btn-skin" href="https://propchunk.youcanbook.me/?skipHeaderFooter=true" data-mode="1" target="_blank">Express Interest</a>
-										
-						<!-- SCRIPT -->				
-						<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'main.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
-						<!-- -->
-						
-						<p style="font-size: 75%">
-
-						</li>
-
-						<li><a class="btn btn-skin " href="https://propchunk.youcanbook.me/?skipHeaderFooter=true" data-mode="1" target="_blank">Fix a Meet Now</a>
-						<!-- SCRIPT -->
-						<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'main.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
-						<!-- -->		
-					    </li>
-                        
-						</ul>
-						</div>
-						</div>
-					</section>
-
-
-						<section class="">
-						
-							<div class="container">
-						    <div class="row " style="font-size: 90%">
-
-								<h4>Terms and Conditions</h4>
-								<ol>
-									<li>We accept investments on first come first serve basis</li> 
-									<li>Investments in this Palghar project will close on August 31, 2016.</li> 
-									<li>If you want to reserve your slot, get in touch and express your interest on or before July 31, 2016.</li>
-									<li>Risk Disclosure: Should the Project incur cost overruns, not be completed, and generally fall into disrepair, the Construction Lender will be entitled to sell the Land as mortgagee in possession to recover its debt. Should this occur some or all of funds invested under this investment may be lost. </li>
-									<li>The Project may fail to be completed on time and within budget. The builder appointed to the Project may default in which case a new builder will be required to complete the Project, incurring additional costs. The Developer will undertake development of the Project and as such will be required to comply with a number of statutory authorities including council approvals and consents, taxation issues, building contracts, project managers, Construction Lenders and the like. There is a risk that the end value of the flat may be less than current market value and the projected profits as shown in this Offering may not be achieved in part or in full.</li>
-									<li>There is no established secondary market (e.g. stock exchange) for these Interests. You should treat your investment as illiquid and being in place for the full term.</li>
-								</ol>
-								</div>
-								</div>
-								</section>
-
-								
 						<section id="appreciationchart" class="home-section">
 						<div class="heading-about">
 			<div class="container">
@@ -902,6 +741,46 @@ chart.render();
 								</div>
 								
 						</section>
+			
+						<section>
+                         							<div class="heading-about">
+			<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="wow bounceInDown" data-wow-delay="0.4s">
+					<div class="section-heading">
+					<h2 align="center">Investment Highlights</h2>
+					
+				</div>
+					</div>
+				</div>
+			</div>
+			</div>
+						</div>
+
+
+								<div class="container">
+									<div class="row">
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		                                                   &nbsp;
+							            </div>
+                                       
+									    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		                                                   &nbsp;
+							            </div>
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+												<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+															
+										                                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-11" id="data">
+										                                      
+										                                      </div>
+                                                </div>
+                     </div>
+             </div>
+         </div>
+</section>
+
 		
 								
 						<section id="builderinfo" class="home-section">
@@ -950,47 +829,203 @@ chart.render();
 						-->		
 						</section>
 		
-						
-						<!-- SHRINATHS  WORK -->
-						<section>
-                         							<div class="heading-about">
+
+
+			<!--
+			<section id="dealprocess" class="home-section text-center">
+						<div class="heading-about">
 			<div class="container">
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2">
 					<div class="wow bounceInDown" data-wow-delay="0.4s">
 					<div class="section-heading">
-					<h2 align="center">Investment Highlights</h2>
+					<h2>DEAL PROCESS</h2>
 					
-				</div>
+					<i class="fa fa-2x fa-angle-down"></i>
+
+					</div>
 					</div>
 				</div>
 			</div>
 			</div>
+		</div>	
+							<div class="container">
+
+								<div class="row">
+							<h5>A simplified representation of how this deal will work out.</h5>
+							<p>A Special Purpose Vehicle (SPV) will be established by the Chunk Technologies Pvt. Ltd. to undertake the cost of Development in a Phase 3 of VBHC in Palghar East. The SPV has the rights to purchase and sell the land.</p>
+						<img src="img/process.png" width="100%" height="100%">
+						</p>
+						
+					
+
+									
 						</div>
+						</div>
+						</section>
+							
+				-->
+				<!--
+				<section id="invprocess" class="home-section text-center">
+						<div class="heading-about">
+			<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="wow bounceInDown" data-wow-delay="0.4s">
+					<div class="section-heading">
+					<h2>INVESTMENT PROCESS</h2>
+					
+					<i class="fa fa-2x fa-angle-down"></i>
 
-
-								<div class="container">
+					</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>	
+		
+									<div class="container">
 									<div class="row">
-										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-		                                                   &nbsp;
-							            </div>
-                                       
-									    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-		                                                   &nbsp;
-							            </div>
-										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-  
-												<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-															
-										                                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-11" id="data">
-										                                      
-										                                      </div>
-                                                </div>
-                     </div>
-             </div>
-         </div>
-</section>
+		
+								<h5>A simplified representation of how much stake you can have</h5>
+		<p>In return of investment the net profits or net proceeds of a Special Purpose Vehicle will be distributed to the Purchaser in accordance to the amount invested. For example If you invest Rs. 10L in a property worth Rs. 1 Cr., you are entitled to receiving the 10% share of the net income the property makes in the duration of the your investment.Select a value and know your share !							
+		<br />							
+		
+		
+									<div align ="center">			
 
+									<span id="in"> <br /></span>
+									<br />
+									<input id ="slider1" type="range" min="100000" max="1900000" value="0" step="50000" onchange="inWords(this.value) "  style="cursor:e-resize"/>
+									<br >
+									<br >
+									<span id="out">Select Some Investment Amount</span>
+									<br>
+									</div>
+									<!-- SCRIPT FOR SLIDER -->
+<!--					
+					<script type="text/javascript">
+										
+									var a = ['0','1','2','3','4','5','6','7','8','9','10', '11', '12', '13', '14', '15', '16', '17', '18', '19'];
+									var b = ['','', '2','3','4','5','6','7','8','9'];
+
+									function inWords (num) {
+										if ((num = num.toString()).length > 9) return 'overflow';
+										n = ('000000000' + num).substr(-9).match(/^(\d{2})(\d{2})(\d{2})(\d{1})(\d{2})$/);
+										if (!n) return; var str = '';
+										str += (n[1] != 0) ? (a[Number(n[1])] || b[n[1][0]] +  a[n[1][1]]) + ' Cr.' : '';
+										str += (n[2] != 0) ? (a[Number(n[2])] || b[n[2][0]] +  a[n[2][1]]) + ' Lacs ' : '';
+										str += (n[3] != 0) ? (a[Number(n[3])] || b[n[3][0]]  + a[n[3][1]]) + ' Thousand ' : '';
+										str += (n[4] != 0) ? (a[Number(n[4])] || b[n[4][0]] + a[n[4][1]]) + 'hundred ' : '';
+										str += (n[5] != 0) ? ((str != '') ? 'and ' : '') + (a[Number(n[5])] || b[n[5][0]] + ' ' + a[n[5][1]]) + 'only ' : '';
+										
+										document.getElementById("in").innerHTML= "<br /> Amount Invested : " + str + "<br />";
+										
+										var maxValue = document.getElementById("slider1").getAttribute("max");
+										
+										var oldValue = num;
+										
+										num =  (num*100)/maxValue;
+										
+										num = num.toPrecision(4);
+										
+									    document.getElementById("out").innerHTML= "Percentage Ownership : " + num + "%";
+
+									}	
+	
+	
+								</script>
+
+
+
+							</div>
+							</div>
+							</div>
+							
+						</section>
+						
+		-->		
+
+				<!-- Call To Action -->
+			<!--	
+					<section id="cta" class="home-section text-center" style="
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/dev.propchunk.com/images/banner.jpg) !Important;
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/dev.propchunk.com/images/banner.jpg) !Important;
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/dev.propchunk.com/images/banner.jpg) !Important;
+		background-image: linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/dev.propchunk.com/images/banner.jpg) !Important;
+		background-attachment: fixed;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+					" 
+					>
+							<div class="heading-about">
+			<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="wow bounceInDown" data-wow-delay="0.4s">
+					<div class="section-heading">
+					<h2 class="title-h6">WHAT ARE YOU WAITING FOR ?</h2>
+					
+					<i class="fa fa-2x fa-angle-down"></i>
+
+					</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>	
+							
+							<div class="container">
+							<div class="row">
+							<p class="title-h6"><i>You don't become rich by saving, you become rich by investing.</i> With our curated deals in growing geographies, you can be a property owner too. </p>
+							<ul class="" style="list-style:none;">
+							<li>
+							<br/>					 
+						<a class="btn btn-skin" href="https://propchunk.youcanbook.me/?skipHeaderFooter=true" data-mode="1" target="_blank">Express Interest</a>
+										
+						<!-- SCRIPT -->				
+					<!--	<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'main.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
+						<!-- -->
+						<!--
+						<p style="font-size: 75%">
+
+						</li>
+
+						<li><a class="btn btn-skin " href="https://propchunk.youcanbook.me/?skipHeaderFooter=true" data-mode="1" target="_blank">Fix a Meet Now</a>
+						<!-- SCRIPT -->
+					<!--	<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'main.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
+						<!-- -->		
+					   <!-- </li>
+                        
+						</ul>
+						</div>
+						</div>
+					</section>
+				-->
+<!--
+						<section class="">
+						
+							<div class="container">
+						    <div class="row " style="font-size: 90%">
+
+								<h4>Terms and Conditions</h4>
+								<ol>
+									<li>We accept investments on first come first serve basis</li> 
+									<li>Investments in this Palghar project will close on August 31, 2016.</li> 
+									<li>If you want to reserve your slot, get in touch and express your interest on or before July 31, 2016.</li>
+									<li>Risk Disclosure: Should the Project incur cost overruns, not be completed, and generally fall into disrepair, the Construction Lender will be entitled to sell the Land as mortgagee in possession to recover its debt. Should this occur some or all of funds invested under this investment may be lost. </li>
+									<li>The Project may fail to be completed on time and within budget. The builder appointed to the Project may default in which case a new builder will be required to complete the Project, incurring additional costs. The Developer will undertake development of the Project and as such will be required to comply with a number of statutory authorities including council approvals and consents, taxation issues, building contracts, project managers, Construction Lenders and the like. There is a risk that the end value of the flat may be less than current market value and the projected profits as shown in this Offering may not be achieved in part or in full.</li>
+									<li>There is no established secondary market (e.g. stock exchange) for these Interests. You should treat your investment as illiquid and being in place for the full term.</li>
+								</ol>
+								</div>
+								</div>
+								</section>
+-->
+								
+						
+						<!-- SHRINATHS  WORK -->
+			
 						
 						<div class="heading-about">
 			<div class="container">
