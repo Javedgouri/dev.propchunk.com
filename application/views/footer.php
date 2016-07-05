@@ -17,7 +17,8 @@
                 echo form_open('Auth/new_user_subscription');
                 ?>
       
-                          
+                        
+						
     <div class="row col-lg-8 col-md-12 col-sm-12 col-xs-12 " >
                     <!--<form role="form" action="" method="POST" class="login-form" id="login-form" name="login-form">-->
                              
@@ -227,39 +228,76 @@ jQuery.validator.addMethod("laxEmail", function(value, element) {
 </script>
 
 -->
+	
+	<!-- -->
+   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="<?php echo base_url('/assets/js/typed.js');?>" type="text/javascript"></script>
+    <script>
+    $(function(){
 
-<!--FOR INFINITY SLIDER  -->
-	  <script type="text/javascript" src="<?php echo base_url('http://code.jquery.com/jquery-1.11.0.min.js');?>"></script>
-  <script type="text/javascript" src="<?php echo base_url('http://code.jquery.com/jquery-migrate-1.2.1.min.js');?>"></script>
- <script src="<?php echo base_url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.0/slick.js');?>"></script>
+        $("#typed").typed({
+            strings: ["FRACTIONAL OWNERSHIP OF REAL ESTATE.", "INVEST DIRECTLY AND SAFELY VIA SPV.", "100% TRANSPARENCY ALL LEGAL DOCUMENTS IN YOUR NAME.", "ONLY HIGH QUALITY REPUTED BUILDERS."],
+         
+            typeSpeed: 200 ,
+            backDelay: 500,
+            loop: true,
+            contentType: 'html', // or text
+            // defaults to false for infinite loop
+            loopCount: false,
+           
+        });
+
+       
+
+    });
+
+    
+    </script>
+   <!-- -->
+   <!--
+   <script>
+   $free = jQuery.noConflict(true);
+   </script>
+   -->
+   
+   <!--FOR INFINITY SLIDER  -->
+	 <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script> -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.0/slick.js"></script>
         <script>
 
 
  $(document).ready(function() {
 
     $('.slider').slick({
-        // dots: true,
+        dots: true,
         infinite: true,
-        speed: 300,
         arrows:true,
         slidesToShow: 4,
         slidesToScroll: 1,
+		autoplay: true,
+        autoplaySpeed: 1000,
         responsive: [{
             breakpoint: 1024,
             settings: {
                 slidesToShow: 3,
                 slidesToScroll: 1,
                 // centerMode: true,
+				autoplay: true,
+                autoplaySpeed: 1000,
 
             }
 
         }, {
             breakpoint: 800,
             settings: {
+				arrows:false,
                 slidesToShow: 2,
                 slidesToScroll: 2,
                 dots: true,
                 infinite: true,
+				autoplay: true,
+                autoplaySpeed: 1000,
 
             }
 
@@ -270,8 +308,10 @@ jQuery.validator.addMethod("laxEmail", function(value, element) {
                 slidesToShow: 2,
                 slidesToScroll: 2,
                 dots: true,
+				arrows:false,
                 infinite: true,
-                
+                autoplay: true,
+                autoplaySpeed: 1000,
             }
         }, {
             breakpoint: 480,
@@ -281,7 +321,7 @@ jQuery.validator.addMethod("laxEmail", function(value, element) {
                 dots: true,
                 infinite: true,
                 autoplay: true,
-                autoplaySpeed: 2000,
+                autoplaySpeed: 1000,
             }
         }]
     });
@@ -290,4 +330,3 @@ jQuery.validator.addMethod("laxEmail", function(value, element) {
 });
         </script>
 
-	<!-- -->

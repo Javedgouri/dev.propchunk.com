@@ -273,8 +273,8 @@
 									-->
 									<div class="social-login">
 	                        	<div class="social-login-buttons text-center">
-		                        	<a class="btn btn-default btn-link-1-facebook center-block blue ip-top" href="#">
-		                        		<i class="fa fa-facebook pull-left"></i> Facebook
+		                        	<a class="btn btn-default btn-link-1-facebook center-block blue " href="#">
+		                        		<i class="fa fa-facebook pull-left ip-top"></i> Facebook
 		                        	</a>
 									<!--
 		                        	<a class="btn btn-default btn-link-1-twitter" href="#">
@@ -283,7 +283,7 @@
 									-->
 									<br />
 		                        	<a class="btn btn-default btn-link-1-google-plus center-block red ip-top" href="#">
-		                        		<i class="fa fa-google-plus pull-left"></i> Google
+		                        		<i class="fa fa-google-plus pull-left ip-top"></i> Google
 		                        	</a>
 	                        	</div>
 								<br />

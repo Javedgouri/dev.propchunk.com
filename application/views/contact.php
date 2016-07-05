@@ -184,7 +184,7 @@
 				  <strong>Email</strong><br>
 				  <a href="mailto:#">hello@propchunk.com</a>
 				</address>	
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 "id="googleMap" style="width:100%;height:100%;">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 "id="googleMap" style="width:100%;height:375px;">
                 </div>		
 			</div>	
 		</div>
