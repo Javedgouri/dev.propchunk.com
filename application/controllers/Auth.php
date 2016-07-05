@@ -26,6 +26,7 @@ Class Auth extends CI_Controller {
 		'PhoneNumber' => $this->input->post('PhoneNumber'),
 		'EmailId' => $this->input->post('EmailId'),
 		'PassWord' => $Password,
+		'SignUpSourceCode'=>'basesite',
 		'ActiveLevel' => 0,
 		'HashKey' =>$HashKey,
 		'CreateUserId' => $this->input->post('EmailId'),
@@ -67,14 +68,15 @@ Class Auth extends CI_Controller {
 					//echo "validation successfully";
 					$EmailId = $this->input->post('EmailId1');
 					$Password = hash('sha512',$this->input->post('password1'));
-					$login_id = $this->Auth_Model->login_valid($EmailId,$Password);
-					if($login_id){
+					$source='basesite';
+					$credential = $this->Auth_Model->login_valid($EmailId,$Password,$source);
+					if($credential){
 						//successful
 						//echo "Password match";
 						//$login_name = $this->Auth_Model->read_user_name($EmailId);
-						$this->session->set_userdata('id',$login_id);
+						$this->session->set_userdata('authdata',$credential);
 						//$this->session->set_userdata('name',$login_name);
-						return redirect('Test/dashboard');
+						return redirect('Home/discoverpage');
 					} else {
 						$data = "<p class='test-danger'>Username & Password Doent Match</p>";
 						$this->session->set_flashdata('login_failed',$data);
@@ -91,8 +93,8 @@ Class Auth extends CI_Controller {
 
 		// Removing session data
 			//$sess_array = array('username' => '');
-			//$this->session->unset_userdata('id');
-			$this->session->sess_destroy();
+			$this->session->unset_userdata('authdata');
+			//$this->session->sess_destroy();
 			$data['message_display'] = 'Successfully Logout';
 			return redirect('Home/auth');
 	}

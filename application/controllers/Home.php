@@ -45,23 +45,11 @@ class Home extends CI_Controller {
 
 	public function auth(){
 		$this->load->library('facebook');
-		if($this->session->userdata('id')){
+		if($this->session->userdata('authdata')){
 			return redirect('Home/'); 
 		}
 
-		if ($this->facebook->logged_in())
-		{
-			$user = $this->facebook->user();
-
-			if ($user['code'] === 200)
-			{
-				//$this->session->set_userdata('login',true);
-				$this->session->set_userdata('id',$user['data']);
-				redirect('Test/dashboard');
-			}
-
-		}
-		
+			
 		 else {
 	
 			$link['link'] = $this->facebook->login_url();		
@@ -79,18 +67,6 @@ class Home extends CI_Controller {
 	}
 	//function to store the contact data from contact page 
 	public function contact_savedata(){
-
-			// Configure email library
-		/*	$config = Array(
-  'protocol' => 'smtp',
-  'smtp_host' => 'ssl://smtp.googlemail.com',
-  'smtp_port' => 465,
-  'smtp_user' => 'javeda3780@gmail.com', // change it to yours
-  'smtp_pass' => '58431929', // change it to yours
-  'mailtype' => 'html',
-  'charset' => 'iso-8859-1',
-  'wordwrap' => TRUE
-);*/
 
       $this->load->library('email');
       $this->email->set_newline("\r\n");

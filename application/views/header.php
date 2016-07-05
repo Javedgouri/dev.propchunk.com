@@ -1660,8 +1660,8 @@ top tech companies in India
 	<meta name="author" content="PropChunk CrowdInvesting">
 	<meta name="description" content="Invest in Mumbai Real Estate Developments from Rs. 1 Lakh. View listing now.">
 	<meta name="copyright" content="Chunk Technologies Pvt. Ltd. copyright (c) 2016">
-		
-
+	<meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="37139270514-ge76i3pnt9d5s25g2vmi4prcpj6cd0o9.apps.googleusercontent.com">
     
     <title></title>
     <link rel="icon" href="favicon rect.ico" />
@@ -1788,13 +1788,13 @@ top tech companies in India
         </li>
         <li><?php
 // Load session library
-           $name= $this->session->userdata('id');
-            $n= $this->session->userdata('name');
-      if(null!==($this->session->userdata('id')))
+           $cred= $this->session->userdata('authdata');
+           print_r($cred);
+      if(null!==($this->session->userdata('authdata')))
             {
                 echo'
               <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Hi,&nbsp;'.$name.'<b class="caret"></b></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Hi,&nbsp;'.$cred[0]->FirstName.'<b class="caret"></b></a>
           <ul class="dropdown-menu dropdown-menu-right">
             <li><a href="'.site_url('Home/test1').'">Dashboard</a></li>
             <li><a href="#">Profile</a></li>

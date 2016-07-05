@@ -10,10 +10,10 @@ Class Auth_Model extends CI_Model {
 		}
 	}
 	
-	public function login_valid($EmailId,$Password) {
-		$query = $this->db->where(['EmailId'=>$EmailId,'Password'=>$Password])->get('RegisteredUser');
-		if ($query->num_rows()) {
-			return $query->row()->FirstName;
+	public function login_valid($EmailId,$Password,$source) {
+		$query = $this->db->where(['EmailId'=>$EmailId,'Password'=>$Password,'SignUpSourceCode'=>$source])->get('RegisteredUser');
+		if ($query->num_rows()==1) {
+			return $query->result();
 		} else {
 			return false;
 		}
