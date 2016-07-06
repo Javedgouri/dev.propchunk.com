@@ -137,18 +137,27 @@
                 </address>  
                 <address>
 
-                <address>
-                  <strong>2016. All Rights Reserved.<br />
-    
-    Chunk Technologies Pvt. Ltd.</strong>
-                 
-                </address>      
   </div>        
     </div>
     </div>	
 		 
         </div>
 
+<div class="row">
+	<div class="col-lg-2">
+	 <img src="<?php echo base_url('/images/pclogo.png');?>" style="height:inherit;" class="img-responsive"/>
+	</div>
+	
+	<div class="col-lg-4">
+	                <address>
+                  <strong>2016. All Rights Reserved.<br />
+    
+    Chunk Technologies Pvt. Ltd.</strong>
+                 
+                </address>      
+
+    </div>	
+    </div>
 
 
 
