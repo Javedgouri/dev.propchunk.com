@@ -158,5 +158,26 @@ class Home extends CI_Controller {
 	public function filter(){
 		$this->load->view('filter');
 	}
+	public function howitworks(){
+		$this->load->view('header');
+		$this->load->view('how-it-works');
+		$this->load->view('footer');
+	}
+	
+	public function investorprotection(){
+		$this->load->view('header');
+		$this->load->view('investor-protection');
+		$this->load->view('footer');
+	}
+		public function privacypolicy(){
+		$this->load->view('header');
+		$this->load->view('privacypolicy');
+		$this->load->view('footer');
+	}
+		public function termsofservice(){
+		$this->load->view('header');
+		$this->load->view('termsofservice');
+		$this->load->view('footer');
+	}
 }
 	
