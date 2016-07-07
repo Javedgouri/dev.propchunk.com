@@ -616,7 +616,7 @@ chart.render();
 								<div class="">
 								<br/>
 								<br />
-								<p><b>In the last two years,the commercial properties of the locality has been appreciating at the rate of -LOCALITYAPPRECIATION- %</b></p>
+								<p><b>In the last two years,the commercial properties of the locality has been appreciating at the rate of <?= $r[0]->LocalityAppreciation; ?> %</b></p>
 								
 								</div>
 								</div>
