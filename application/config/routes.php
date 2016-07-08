@@ -49,14 +49,39 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
+
 $route['default_controller'] = 'Home';
+
+$route['about-us'] = "about_us" ;
+$route['investor-protection'] = "investor_protection" ;
+$route['how-it-works'] = "how_it_works" ;
+$route['privacy-policy'] = "privacy_policy" ;
+$route['investor-protection'] = "investor_protection" ;
+
+$default_controller = "Home"; // default controller name
+$controller_exceptions = array("discover","about-us","contact","auth","test1","investor-protection","discoverpage","gallery","filter","privacy-policy","terms","faq","how-it-works"); 
+foreach($controller_exceptions as $v) {
+  $route[$v] = "$default_controller/".$v;
+  $route[$v."/(.*)"] = "$default_controller/".$v.'/$1';
+}
+//REMOVING Home CONTROLLER FROM ALL PAGES
+$default_controller1 = "CampaignController"; // default controller name
+$controller_exceptions = array("campaigns"); 
+foreach($controller_exceptions as $v) {
+  $route[$v] = "$default_controller1/".$v;
+  $route[$v."/(.*)"] = "$default_controller1/".$v.'/$1';
+}
+
 $route['404_override'] = '';
-$route['translate_uri_dashes'] = FALSE;
+$route['translate_uri_dashes'] = TRUE;
 $route['cachecontroller'] = 'Cache_controller'; 
 $route['cachecontroller/delete'] = 'Cache_controller/delete_file_cache';
+
 
 $route['Auth/(:any)'] = 'Auth/$1';
 $route['Test/(:any)'] = 'Test/$1';
 $route['Verify/(:any)'] = 'Verify/$1';
 $route['Verify/email_verify/(:any)/(:any)'] = 'Verify/email_verify/$1/$2';
+
+
 
