@@ -1818,6 +1818,9 @@ top tech companies in India
     padding-left: 16%;
     padding-right: 10%;
 	}
+    .change-color1{
+        color: black ;
+    }
 	</style>
 	<!-- -->
 		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
@@ -1899,10 +1902,10 @@ top tech companies in India
         <div class="container" >
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
+                    <i class="fa fa-bars " data-spy="scroll" role="navigation"></i>
                 </button>
                 <a class="navbar-brand" href="<?php echo site_url('');?>">
-                  <img src="<?php echo base_url('/images/pclogo3.png');?>" style="height:inherit" class="img-responsive pull-left"/>
+                  <img src="<?php echo base_url('/images/pclogo4.png');?>" style="height:inherit" class="img-responsive pull-left"/>
                 </a>
             
             </div>
@@ -1941,7 +1944,7 @@ top tech companies in India
             }
             else
             {  
-             echo' <a href="'.site_url('auth').'" style="background:#ed4933;color:white;font-size:12px">Login/Signup</a>';
+             echo' <a href="'.site_url('auth').'" style="background:#00adef;color:white !important;font-size:12px" >Login/Signup</a>';
                }
 
 ?>
