@@ -2,12 +2,6 @@
 	<link href="<?php echo base_url('/assets/css/tablecss.css');?>" rel="stylesheet"/>
 	
 	<style>
-	.pleft{
-		padding-left:30px;
-	}
-	.spadbot{
-		padding-bottom:110px;
-	}
 	.caption {
     position: relative;
     overflow: hidden;
@@ -165,7 +159,6 @@ echo".intro {
 	<section id="section-colors-left" class="color-panel-left panel-open-left center" style="opacity: .8;">
 			<div class="color-wrap-left">
 				<p style="color:#000;"><b><span id="numberofpeople" style="color: #000000">7</span></b> People are viewing this offer right now!</p>
-				
 			</div>
 		</section>
 
@@ -175,9 +168,7 @@ echo".intro {
 <section id="intro" class="intro"  >
 						<div class="inner change-color">
 					<h2 class="title-h6"><?= $r[0]->PropertyName;?></h2><!-- PROPERTY NAME HERE-->
-	                <p class="title-h6" style="margin:0px;">The funds are being raised for the purchase of a property at <?= $r[0]->PropertyName;?>,<?= $r[0]->Locality;?> .</p><!-- PROPERTY DESC -->	
-					<br/>
-					</div>
+	                <p class="title-h6" style="margin:0px;">The funds are being raised for the purchase of a property at <?= $r[0]->PropertyName;?>,<?= $r[0]->Locality;?> .</p><!-- PROPERTY DESC -->	</div>
 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
 
 <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 text-center" style="background:inherit;">
@@ -271,7 +262,7 @@ echo $difference->days;
 
 
 						
-						<section  id="offerparams" class="text-center team boxed-grey" ">
+						<section  id="offerparams" class="text-center team boxed-grey" >
 			<div class="container">
 			<div class="row " >
 			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
@@ -335,7 +326,8 @@ $name="http://localhost/admin.propchunk.com/assests/uploads/".$a;
                 </div>' ;
  }
          ?>
-</div>				
+   			
+        </div>				
 
 					
 <!--offer details -->	
@@ -406,7 +398,7 @@ $name="http://localhost/admin.propchunk.com/assests/uploads/".$a;
 					<div class="section-heading text-center">
 					<h2>LOCATION AND DEMOGRAPHY</h2>
 					
-				<!--	<i class="fa fa-2x fa-angle-down"></i> -->
+					<i class="fa fa-2x fa-angle-down"></i>
 
 					</div>
 					</div>
@@ -581,8 +573,6 @@ echo '{
 //dataPoints. – line 2
 
 var chart = new CanvasJS.Chart("chartContainer", {
-	animationEnabled: true,
- animationDuration: 10000,
   title: {
     text: "APPRECIATION OVER PAST FEW YEARS",
 	padding:10
@@ -621,17 +611,21 @@ chart.render();
 							</script>
 							
 						</div>
+						<div class="container">
 								<div class="row">
+								<div class="">
 								<br/>
 								<br />
-								<p class="pleft"><b>In the last two years,the commercial properties of the <?= $r[0]->Locality; ?> has been appreciating at the rate of <?= $r[0]->LocalityAppreciation; ?>%</b></p>
+								<p><b>In the last two years,the commercial properties of the locality has been appreciating at the rate of <?= $r[0]->LocalityAppreciation; ?> %</b></p>
 								
+								</div>
+								</div>
 								</div>
 								
 						</section>
 			
-						<section class="spadbot">
-                    <div class="heading-about">
+						<section>
+                         							<div class="heading-about">
 			<div class="container">
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2">
@@ -650,7 +644,7 @@ chart.render();
 								<div class="container">
 									<div class="row">
 															
-										                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pleft" >
+										                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
 										                                      
                                                              <?php 
                                                               $a=  $r[0]->IsUnderConstruction;
@@ -667,19 +661,19 @@ chart.render();
                                                              	echo'
                                                              
                                                              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 m-pad">
-																	<span id="name" >Construction Status: </span>'.$r[0]->ConstructionStatus.'.
+																	<span id="name" >Construction Status:</span>'.$r[0]->ConstructionStatus.'.
                                                              </div>
                                                              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 m-pad">
-																	<span id="name" >Construction Contractor: </span> '.$r[0]->ConstructionContractorName.'.
+																	<span id="name" >Construction Contractor:</span> '.$r[0]->ConstructionContractorName.'.
                                                              </div>
                                                              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 m-pad" >
-																	<span id="name" >Construction Specification: </span> '.$r[0]->ConstructionSpecification,'. 
+																	<span id="name" >Construction Specification:</span> '.$r[0]->ConstructionSpecification,'. 
                                                              </div>
                                                              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 m-pad" >
-																	<span id="name" >Builder Lender :</span> '.$r[0]->BuilderLender.'.
+																	<span id="name" >Builder Lender:</span> '.$r[0]->BuilderLender.'.
                                                              </div>
                                                              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 m-pad" >
-																	<span id="name" >Expected Possesion Date :</span>'. $r[0]->ExpectedPossessionMonthYear.'. 
+																	<span id="name" >Expected Possesion Date:</span>'. $r[0]->ExpectedPossessionMonthYear.'. 
                                                              </div>
                                                              ';
 		                                                       
@@ -687,16 +681,16 @@ chart.render();
 
 
 		                                                    ?>
-												     </div>
+												         </div>
                                                 </div>
-											</div>
+                     </div>
              
 </section>			
 
 
 
 
-						<section class="">
+						<section>
                          							<div class="heading-about">
 									<div class="container">
 									<div class="row">
@@ -715,10 +709,10 @@ chart.render();
 
 								<div class="container">
 									<div class="row">
-									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="headingups">
+									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-11" id="headingups">
 										                                      
 										                                      </div>
-										                                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="data">
+										                                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-11" id="data">
 										                                      
 										                                      </div>
              </div>
@@ -773,8 +767,8 @@ chart.render();
                                         
 										<tr>
 										<td><a href="#" class="toggler" data-prod-cat="3">(+)</a></td>
-										<td><b>Base Price</b></td>
-										<td id="baseprice"><span style="white-space:pre;"><i class="fa fa-inr"></i>&nbsp;<?= $tbp ?></span></td>
+										<td><b>BASE PRICE</b></td>
+										<td id="baseprice"><span style="white-space:pre;"><i class="fa fa-inr"><?= $tbp ?></i></span></td>
 										</tr>
 										<tr class="cat3" style="display:none">
                                             <td></td>
@@ -783,72 +777,72 @@ chart.render();
                                         </tr>
                                         <tr  class="cat3" style="display:none">
                                             <td></td>
-                                            <td>Price Per Sq.Ft</td>
-                                            <td><span style="white-space:pre;"><i class="fa fa-inr"></i>&nbsp;<?= $r[0]->PricePerSqFt ?></span></td>
+                                            <td>PRICE PER SQ.FT</td>
+                                            <td><span style="white-space:pre;"><i class="fa fa-inr"></i><?= $r[0]->PricePerSqFt ?></span></td>
 
                                         </tr>
                                        
 										<tr>
                                             <td></td>
-                                            <td><b>Property Mgmt Fee</b></td>
-                                            <td><span style="white-space:pre;"><i class="fa fa-inr"></i>&nbsp;2,00,000</span></td>
+                                            <td><b>PROPERTY MGMT FEE</b></td>
+                                            <td><span style="white-space:pre;"><i class="fa fa-inr"></i>2,00,000</span></td>
                                         </tr>
 										
 										<tr>
 										<td><a href="#" class="toggler" data-prod-cat="1">(+)</a></td>
-										<td><b>SPV Expenses</b></td>
-										<td id="spvtotal"><span style="white-space:pre;"><i class="fa fa-inr"></i>&nbsp;<?= $spvexp ?></span ></td>
+										<td><b>SPV EXPENSES</b></td>
+										<td id="spvtotal"><span style="white-space:pre;"><i class="fa fa-inr"></i><?= $spvexp ?></span ></td>
 										</tr>
 										
 										<tr class="cat1" style="display:none">
                                             <td></td>
-                                            <td>Legal Charges</td>
-                                            <td><span style="white-space:pre;"><i class="fa fa-inr"></i>&nbsp;<?= $r[0]->LegalCharges ?></span ></td>
+                                            <td>LEGAL CHARGES</td>
+                                            <td><span style="white-space:pre;"><i class="fa fa-inr"></i><?= $r[0]->LegalCharges ?></span ></td>
                                         </tr>
 										<tr class="cat1" style="display:none">
                                             <td></td>
-                                            <td>SPV Creation</td>
-                                            <td><span style="white-space:pre;"><i class="fa fa-inr"></i>&nbsp;<?= $r[0]->SPVCreationCost ?></span ></td>
+                                            <td>SPV CREATION </td>
+                                            <td><span style="white-space:pre;"><i class="fa fa-inr"></i><?= $r[0]->SPVCreationCost ?></span ></td>
                                         </tr>
 										<tr>
 										<td><a href="#" class="toggler" data-prod-cat="2">(+)</a></td>
-										<td><b>Taxes And Duties</b></td>
-										<td id="taxtotal"><span style="white-space:pre;"><i class="fa fa-inr"></i>&nbsp;<?= $tad ?></span ></td>
+										<td><b>TAXES AND DUTIES</b></td>
+										<td id="taxtotal"><span style="white-space:pre;"><i class="fa fa-inr"></i><?= $tad ?></span ></td>
 										</tr>
 										<tr class="cat2" style="display:none">
                                             <td></td>
-                                            <td>Vat</td>
-                                            <td><span style="white-space:pre;"><i class="fa fa-inr"></i>&nbsp;<?= $r[0]->VAT ?></span ></td>
+                                            <td>VAT</td>
+                                            <td><span style="white-space:pre;"><i class="fa fa-inr"></i><?= $r[0]->VAT ?></span ></td>
                                         </tr>
 										<tr class="cat2" style="display:none">
                                             <td></td>
-                                            <td>Service Tax</td>
-                                            <td><span style="white-space:pre;"><i class="fa fa-inr"></i>&nbsp;<?= $r[0]->ServiceTax ?></span ></td>
+                                            <td>SERVICE TAX</td>
+                                            <td><span style="white-space:pre;"><i class="fa fa-inr"></i><?= $r[0]->ServiceTax ?></span ></td>
                                         </tr>
 										<tr class="cat2" style="display:none">
                                             <td></td>
-                                            <td> Stamp Duty</td>
-                                            <td><span style="white-space:pre;"><i class="fa fa-inr"></i>&nbsp;<?= $r[0]->StampDuty ?></span ></td>
+                                            <td> STAMP DUTY </td>
+                                            <td><span style="white-space:pre;"><i class="fa fa-inr"></i><?= $r[0]->StampDuty ?></span ></td>
                                         </tr>
 										<tr class="cat2" style="display:none">
                                             <td></td>
-                                            <td>Registration</td>
-                                            <td><span style="white-space:pre;"><i class="fa fa-inr"></i>&nbsp;<?= $r[0]->RegistrationCharge ?></span ></td>
+                                            <td>REGISTRATION</td>
+                                            <td><span style="white-space:pre;"><i class="fa fa-inr"></i><?= $r[0]->RegistrationCharge ?></span ></td>
                                         </tr>									
 										<tr>
 										<td><a href="#" class="toggler" data-prod-cat="4">(+)</a></td>
-										<td><b>Total Cost</b></td>
-										<td><span style="white-space:pre;"><i class="fa fa-inr"></i>&nbsp;<?= $r[0]->CampaignGoalAmount ?></span ></td>
+										<td><b>TOTAL COST</b></td>
+										<td><span style="white-space:pre;"><i class="fa fa-inr"></i><?= $r[0]->CampaignGoalAmount ?></span ></td>
 										</tr>
 										<tr class="cat4" style="display:none">
                                             <td></td>
-                                            <td>Actual Property Cost</td>
-                                            <td><span style="white-space:pre;" ><i class="fa fa-inr"></i>&nbsp;<?php  $c=$r[0]->ActualPropertyCost;echo $c; ?></span ></td>
+                                            <td>ACTUAL PROPERTYCOST</td>
+                                            <td><span style="white-space:pre;" ><i class="fa fa-inr"></i><?php  $c=$r[0]->ActualPropertyCost;echo $c; ?></span ></td>
                                         </tr>
 										<tr class="cat4" style="display:none">
                                             <td></td>
-                                            <td>Rounding Up/Down</td>
-                                            <td id="roundup"><span style="white-space:pre;"><i class="fa fa-inr"></i>&nbsp;<?php $a=$r[0]->CampaignGoalAmount; $b=$r[0]->ActualPropertyCost;$c=$a-$b;echo abs($c);?></span ></td>
+                                            <td>ROUNDING UP/DOWN</td>
+                                            <td id="roundup"><span style="white-space:pre;"><i class="fa fa-inr"></i><?php $a=$r[0]->CampaignGoalAmount; $b=$r[0]->ActualPropertyCost;$c=$a-$b;echo abs($c);?></span ></td>
                                         </tr>
 																			
                                     </tbody>
@@ -915,12 +909,10 @@ chart.render();
 												renderTo: elementId,
 												plotBackgroundColor: null,
 												plotBorderWidth: null,
-												plotShadow: false,
-												
+												plotShadow: false
 											}, title: {
 												text: 'COST SPLIT UP '
 											},
-											
 											tooltip: {
 												
 												formatter: function () {
@@ -944,8 +936,7 @@ chart.render();
 											},
 											series: [{
 												type: 'pie',
-											
-												name: 'Cost Components',
+												name: 'Browser share',
 												data: dataList
 											}]
 										});
@@ -1032,7 +1023,7 @@ chart.render();
 					<div class="section-heading text-center">
 					<h2>BUILDER INFO</h2>
 					
-					<!-- <i class="fa fa-2x fa-angle-down"></i> -->
+					<i class="fa fa-2x fa-angle-down"></i>
 
 					</div>
 					</div>
@@ -1209,7 +1200,7 @@ chart.render();
 					<div class="section-heading">
 					<h2 class="title-h6">WHAT ARE YOU WAITING FOR ?</h2>
 					
-					
+					<i class="fa fa-2x fa-angle-down"></i>
 
 					</div>
 					</div>
@@ -1587,58 +1578,8 @@ Is RealCrowd an equity investor in the offerings?
 								<div class="container">
 									
 									<!-- IF SESSION LOGGED IN THEN ACTIVATE CLASSES ELSE NOTHING -->
-									<?php
-// Load session library
-           $name= $this->session->userdata('id');
-            $n= $this->session->userdata('name');
-      if(null!==($this->session->userdata('id')))
-            {
-				$b="http://localhost/admin.propchunk.com/assests/uploads/".$r[0]->DueDiligenceReportURL;
-				$c="http://localhost/admin.propchunk.com/assests/uploads/".$r[0]->ProductDiscloreStatementURL;	
-				$d="http://localhost/admin.propchunk.com/assests/uploads/".$r[0]->CertificatesURL ;
-				$e="http://localhost/admin.propchunk.com/assests/uploads/".$r[0]->PropertyBrochureURL ;
-				$f="http://localhost/admin.propchunk.com/assests/uploads/".$r[0]->MiscellaneousDocumentsURL ;
-                echo'<article class="">
-
-									<div class="row pd-bot ">
-                                    
-					                        <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 pd-bot" align="center">
-													<i class="fa fa-file-pdf-o" aria-hidden="true" style="font-size:32px;"></i><br/>
-							                            <a href="'  .$b. ' " target="_blank" download><span id="name">Due Diligence Report</span></a>
-									 			             </div>
-												             
-															<div class="col-xs-6 col-sm-2 col-md-2 col-lg-2 pd-bot" align="center">
-							                                 	<i class="fa fa-file-pdf-o" aria-hidden="true" style="font-size:32px;"></i><br/>
-														          <a href="'.$c.'" target="_blank" download><span id="name">Product Disclosure Statement</span></a>
-									 			        						
-												             </div>
-																					<div class="col-xs-6 col-sm-2 col-md-2 col-lg-2 pd-bot" align="center">
-                                                             	<i class="fa fa-file-pdf-o" aria-hidden="true" style="font-size:32px;"></i><br/>
-														         <a href="'.$d.'" target="_blank" download><span id="name">Building Certificates</span></a>
-									 			        													
-												             </div>
- 
-							   								<div class="col-xs-6 col-sm-2 col-md-2 col-lg-2 pd-bot" align="center">
-																				<i class="fa fa-file-pdf-o" aria-hidden="true" style="font-size:32px;"></i><br/>
-								                                         <a href="'.$e.'" target="_blank" download><span id="name">Brochure</span></a>
-									 			        
-												             </div>
-												             
-															<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 pd-bot" align="center">
-							                                    	<i class="fa fa-file-pdf-o" aria-hidden="true" style="font-size:32px;"></i><br/>
-														            <a href="'.$f.'" target="_blank" download><span id="name">Miscellaneous Documents</span></a>
-									 			        						
-												             </div>
-															 
-															 
-                                             </div>
-											 
-								
-										</article>';     
-            }
-            else
-            {  
-             echo' <article class="caption">
+									
+									<article class="caption">
 
 									<div class="row pd-bot caption__media">
                                     <!--
@@ -1654,30 +1595,30 @@ Is RealCrowd an equity investor in the offerings?
 					                 <!--<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">-->
 									        <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 pd-bot" align="center">
 													<i class="fa fa-file-pdf-o" aria-hidden="true" style="font-size:32px;"></i><br/>
-							                            <a href="#" download><span id="name">Due Diligence Report</span></a>
+							                            <a href="<?php $a="http://localhost/admin.propchunk.com/assests/uploads/".$r[0]->DueDiligenceReportURL ;echo $a; ?>" target="_blank" download><span id="name">Due Diligence Report</span></a>
 									 			             </div>
 												             
 															<div class="col-xs-6 col-sm-2 col-md-2 col-lg-2 pd-bot" align="center">
 							                                 	<i class="fa fa-file-pdf-o" aria-hidden="true" style="font-size:32px;"></i><br/>
-														          <a href="#" target="_blank" download><span id="name">Product Disclosure Statement</span></a>
+														          <a href="<?php $a="http://localhost/admin.propchunk.com/assests/uploads/".$r[0]->ProductDiscloreStatementURL ;echo $a; ?>" target="_blank" download><span id="name">Product Disclosure Statement</span></a>
 									 			        						
 												             </div>
 
 															<div class="col-xs-6 col-sm-2 col-md-2 col-lg-2 pd-bot" align="center">
                                                              	<i class="fa fa-file-pdf-o" aria-hidden="true" style="font-size:32px;"></i><br/>
-														         <a href="#" target="_blank" download><span id="name">Building Certificates</span></a>
+														         <a href="<?php $a="http://localhost/admin.propchunk.com/assests/uploads/".$r[0]->CertificatesURL ;echo $a; ?>" target="_blank" download><span id="name">Building Certificates</span></a>
 									 			        													
 												             </div>
  
 							   								<div class="col-xs-6 col-sm-2 col-md-2 col-lg-2 pd-bot" align="center">
-																<i class="fa fa-file-pdf-o" aria-hidden="true" style="font-size:32px;"></i><br/>
-								                                <a href="#" target="_blank" download><span id="name">Brochure</span></a>
+																				<i class="fa fa-file-pdf-o" aria-hidden="true" style="font-size:32px;"></i><br/>
+								                                         <a href="<?php $a="http://localhost/admin.propchunk.com/assests/uploads/".$r[0]->PropertyBrochureURL ;echo $a; ?>" target="_blank" download><span id="name">Brochure</span></a>
 									 			        
 												             </div>
 												             
 															<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 pd-bot" align="center">
-							                                   <i class="fa fa-file-pdf-o" aria-hidden="true" style="font-size:32px;"></i><br/>
-														        <a href="#" target="_blank" download><span id="name">Miscellaneous Documents</span></a>
+							                                    	<i class="fa fa-file-pdf-o" aria-hidden="true" style="font-size:32px;"></i><br/>
+														            <a href="<?php $a="http://localhost/admin.propchunk.com/assests/uploads/".$r[0]->MiscellaneousDocumentsURL ;echo $a; ?>" target="_blank" download><span id="name">Miscellaneous Documents</span></a>
 									 			        						
 												             </div>
 															 
@@ -1699,15 +1640,10 @@ Is RealCrowd an equity investor in the offerings?
             </p>
         </div>
 										</article>
-									';
-               }
-
-?>
-									
 										
                                              </div>
 	<div class="container">
-<!--<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>-->
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
 
 <!-- Modal -->
 <div id="myModal" class="modal fade" role="dialog">
@@ -1741,12 +1677,7 @@ Is RealCrowd an equity investor in the offerings?
         log in with Google
       </a>
 	  -->
-	  <div class="form-top">
-	                        		<div class="form-top-left">
-	                        			<h3>SOCIAL LOGIN</h3>
-	                            		<p></p>
-	                        		</div>
-	                        	
+	  <div class="form-top">	                        	
 								<div class="social-login">
 	                        	<div class="social-login-buttons text-center">
 		                        	<a class="btn btn-default btn-link-1-facebook center-block blue " href="#">
@@ -1774,7 +1705,6 @@ Is RealCrowd an equity investor in the offerings?
 								?>
 
     </div>
-    <form class="email-login" id="Login" action="--ASSUMPTION--">
       
 	  <!--
 	  <div class="u-form-group">
@@ -1831,7 +1761,6 @@ Is RealCrowd an equity investor in the offerings?
 	  <p>Don't have an account? <a href="#redirect" id="signup-box-link" class="form-link">Sign Up</a></p>
      	</form>
 	
-    <form class="email-signup" id="SignUp" action="--ASSUMPTION--">
       
 	  
 	  <!--
@@ -1857,7 +1786,7 @@ Is RealCrowd an equity investor in the offerings?
       </div>
 	  -->
 	  <?php 
-								$attrib = array('id'=>'register','name'=>'register','method'=>'POST','role'=>'form');
+								$attrib = array('id'=>'register1','name'=>'register1','method'=>'POST','role'=>'form');
 								echo form_open('Auth/new_user_registration',$attrib);
 								?>
 				                    <!--<form role="form" action="" method="post" class="registration-form" id="registration-form" >-->
@@ -2048,7 +1977,7 @@ Is RealCrowd an equity investor in the offerings?
     var str = "<?php echo $investmentdata; ?>";
     var str1= str.split("!");
     var x=str1[1];
-	document.getElementById('headingups').innerHTML= '<h5 style="padding-left:30px;margin-bottom:10px;">PROPERTY UNIQUE SELLING POINT</h5><br />';
+	document.getElementById('headingups').innerHTML= '<h5 style="padding-left:30px;margin-bottom:10px;">HEADING FOR UPS </h5><br />';
 
 var i=1;
 for(i=0;i<x;i++)
@@ -2141,3 +2070,103 @@ $(document).ready(function(){
 });
 </script>
 -->
+	  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>  
+      <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.validation/1.14.0/jquery.validate.js"></script>
+      <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.validation/1.14.0/jquery.validate.min.js"></script>
+
+
+<!--script for registartion-->
+<script type="text/javascript">
+
+$.validator.setDefaults({
+                submitHandler: function() {
+                       console.log('submited');
+                        form.submit();
+                }
+        });
+
+
+jQuery.validator.addMethod("laxEmail", function(value, element) {
+  // allow any non-whitespace characters as the host part
+  return this.optional( element ) || /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/.test( value );
+}, 'Please enter your valid email.');
+
+
+
+ $('form').each(function () {
+       			 
+                // validate signup form on keyup and submit
+                 $('#register1').validate({
+                        rules: {
+                                FirstName: "required",
+                                LastName: "required",
+                                EmailId: {
+                                        required: true,
+                                        email: true,
+                                        laxEmail:true,
+                                        remote: {
+											        url: "<?php echo site_url('Verify/checkuser');?>",
+											        type: "post",
+											        data: {
+											          EmailId: function() {
+											            return $('#register :input[name="EmailId"]').val();
+											        	}
+											        }
+											    }
+                                },
+                                PhoneNumber:{
+                                        required: true,
+                                        number: true
+                                },
+                                password: {
+                                        required: true,
+                                        minlength: 5
+                                },
+                                ConfirmPassword: {
+                                        required: true,
+                                        minlength: 5,
+                                        equalTo: "#password"
+                                }
+                                
+                        },
+                        messages: {
+                                FirstName: "Please enter your firstname",
+                                LastName: "Please enter your lastname",
+                                EmailId: {
+                                	required:"Please enter your valid email.",
+    								remote: jQuery.validator.format(" {0} is already registered.")  
+                                },
+                                PhoneNumber:"Please enter a valid PhoneNumber",
+                                password: {
+                                        required: "Please provide a password",
+                                        minlength: "Your password must be at least 5 characters long"
+                                },
+                                ConfirmPassword: {
+                                        required: "Please provide a password",
+                                        minlength: "Your password must be at least 5 characters long",
+                                        equalTo: "Please enter the same password as above"                                
+                                }
+                            }
+                });
+
+       
+                // validate signup form on keyup and submit
+                
+                 $('#login').validate({
+                        rules: {
+                                EmailId1:{required: true,
+                                	laxEmail:true
+                                },
+                                password1: {required: true}
+                                
+                        },
+                        messages: {
+                                
+                                EmailId1: {required: "Please provide a Email Id"},
+                                password1: {required: "Please provide a password"}                                
+                               
+                            }
+                });
+
+});
+</script>
