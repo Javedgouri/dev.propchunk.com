@@ -1885,6 +1885,189 @@ top tech companies in India
             100% { opacity:1; }
         }
     </style>
+     <style>
+  .error { color: red; }
+  </style>
+  
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+ <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="37139270514-ge76i3pnt9d5s25g2vmi4prcpj6cd0o9.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+<script>
+$(document).ready(function () {
+
+
+            $('#fbLogin').click(function () {
+                        var FB = window.FB;
+                        var scopes = 'public_profile,email';
+
+                        FB.login(function (response) {
+                            socialPlugin.facebook.statusChangeCallback(response);
+                            
+                        }, {scope: scopes});
+
+                        return false;
+                    });
+       
+ 
+
+                });
+
+(function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js#version=v2.5&appId=1058898697522458&status=true&cookie=true&xfbml=true";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+
+  var socialPlugin = {
+    login: function (data, url) {
+        console.log('data',data);
+       var request = $.ajax({
+       		 type: "POST",
+             url: "<?= site_url('Social/facebook');?>",
+             data: data,
+            success: function() {
+             window.location = 'http://localhost/dev.propchunk.com/Home/discoverpage';
+         // }
+    }
+
+
+        });
+
+        request.done(function (resp) {
+            console.log(resp);
+
+        });
+
+        request.fail(function (jqXHR, textStatus) {
+          //  console.log(jqXHR)
+        });
+    },
+    showProfileDialog: function (resp) {
+
+        $('#update-email').form('set values', {
+            first_name: resp.first_name,
+            last_name: resp.last_name,
+        });
+
+        $('#show_email_form').modal({
+            closable: true,
+            onApprove: function () {
+                if (socialPlugin.validateUpdateEmailForm()) {
+                    var formData = $('#update-email').form('get values', ['id','first_name', 'last_name', 'email'])
+                    resp.id=formData.id;
+                    resp.first_name = formData.first_name;
+                    resp.last_name = formData.last_name;
+                    resp.email = formData.email;
+                    socialPlugin.updateEmail('/' + resp.social + '/confirm-email', resp)
+                } else {
+                    return false;
+                }
+
+            }
+        }).modal('show', 'hide others');
+
+    },
+    validateUpdateEmailForm: function () {
+        return $('#update-email').form('is valid');
+
+    },
+    updateEmail: function (url, data) {
+
+        var request = $.ajax({
+            url: url,
+            type: 'POST',
+            data: data,
+            dataType: 'json'
+        });
+
+        request.done(function (resp) {
+            if (resp.status = 'success') {
+                window.location.reload();
+            }
+        });
+
+        request.fail(function (jqXHR, textStatus) {
+            console.log(jqXHR)
+        });
+    }
+};
+
+
+
+socialPlugin.facebook = {
+    statusChangeCallback: function (response) {
+        if (response.status === 'connected') {
+            // Logged into your app and Facebook.
+            
+
+            socialPlugin.facebook.apiRequest(response);
+        } else if (response.status === 'not_authorized') {
+            // The person is logged into Facebook, but not your app.
+            console.log('Please log into this app.');
+
+        } else {
+            // The person is not logged into Facebook, so we're not sure if
+            // they are logged into this app or not.
+            console.log('Please log into Facebook.');
+        }
+    },
+    apiRequest: function (authResponse) {
+
+        // FB.api('/me?fields=id,name,email,gender,first_name,last_name,link,user_location,birthday', function (response) {
+            FB.api('/me?fields=id,email,first_name,last_name,gender', function (response) {
+            if(response && !response.error)
+            {
+              socialPlugin.login(response, '<?= site_url('Social/facebook');?>');
+                //console.log(response);
+            }
+            else{
+                console.log('error in login!!');
+            }
+            
+        });
+    }
+
+};
+</script>
+
+  <script>
+      function onSignIn(googleUser) {
+        // Useful data for your client-side scripts:
+        var profile = googleUser.getBasicProfile();
+        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+        console.log('Full Name: ' + profile.getName());
+        console.log('Given Name: ' + profile.getGivenName());
+        console.log('Family Name: ' + profile.getFamilyName());
+        console.log("Image URL: " + profile.getImageUrl());
+        console.log("Email: " + profile.getEmail());
+
+        // The ID token you need to pass to your backend:
+        var id_token = googleUser.getAuthResponse().id_token;
+        console.log("ID Token: " + id_token);
+        var id = profile.getId();
+        var first_name = profile.getGivenName();
+        var last_name= profile.getFamilyName();
+        var email=profile.getEmail();
+        $.ajax({
+
+                type: "POST",
+                url: '<?= site_url('Social/google');?>',
+                data: "&id=" + id + "&first_name=" + first_name + "&last_name="+ last_name + "&email=" + email,
+                success: function() {
+                	console.log(id);
+                    window.location = 'http://localhost/dev.propchunk.com/Home/discoverpage';
+
+                }
+          });
+      };
+//end of api
+    </script>
 
 	
 </head>
