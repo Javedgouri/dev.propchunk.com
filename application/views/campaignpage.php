@@ -152,6 +152,28 @@ echo".intro {
 		text-align: center;
 }";?>
 
+<!-- -->
+
+.affix {
+top: 51px;
+width:100%;
+background-color:white;
+z-index:9000;
+}
+.navbar-custom .nav li a:hover, .navbar-custom .nav li a:focus, .navbar-custom .nav li.active {
+    outline: 0;
+    background-color: #ccc;
+}
+
+.collapse.navbar-collapse.navbar-center.navbar-main-collapse.affix.bg1{
+    border-bottom: 1px solid #ccc;
+}
+.bg{
+	
+background-color:white;
+	
+}
+
 	</style>
 
 	
@@ -259,6 +281,32 @@ echo $difference->days;
 
 
 						</section>
+ <nav class="navbar navbar-custom bg text-center" role="navigation">
+  	<div class="row">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+				
+                </button>
+                
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-center bg1 navbar-main-collapse " data-spy="affix" data-offset-top="700">
+      <ul class="nav navbar-nav">
+		   
+    <li><a href="#locanddemo">LOCATION </a></li>
+    <li><a href="#appreciationchart">APPRECIATION</a></li>
+    <li><a href="#constructionStatus">CONSTRUCTION STATUS</a></li>
+	    <li><a href="#investmenthighlights">INVESTMENT HIGHLIGHTS</a></li>
+	    <li><a href="#builderinfo">BUILDER INFO</a></li>
+		    <li><a href="#specifications">SPECIFICATIONS</a></li>
+			    <li><a href="#faq">FAQ'S</a></li>
+				    <li><a href="#downloads">DOWNLOADS</a></li>
+  </ul>
+  </div>
+  </div>
+  
+</nav>
 
 
 						
