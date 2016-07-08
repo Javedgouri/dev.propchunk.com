@@ -1660,7 +1660,8 @@ top tech companies in India
 	<meta name="author" content="PropChunk CrowdInvesting">
 	<meta name="description" content="Invest in Mumbai Real Estate Developments from Rs. 1 Lakh. View listing now.">
 	<meta name="copyright" content="Chunk Technologies Pvt. Ltd. copyright (c) 2016">
-	<meta name="google-signin-scope" content="profile email">
+  
+  <meta name="google-signin-scope" content="profile email">             
     <meta name="google-signin-client_id" content="37139270514-ge76i3pnt9d5s25g2vmi4prcpj6cd0o9.apps.googleusercontent.com">
     
     <title></title>
@@ -1668,8 +1669,8 @@ top tech companies in India
 	<!--<link href="images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" /><!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]--><!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
     <!--<link rel="icon" href="l('./images/faviconrect.ico')" />-->
 	
-	<link rel="shortcut icon" href="<?php echo base_url('./images/favicon.ico');?>" type="image/x-icon">
-	<link rel="icon" href="<?php echo base_url('./images/favicon.ico');?>" type="image/x-icon">
+	<link rel="shortcut icon" href="<?php echo base_url('/images/fav.ico');?>" type="image/x-icon">
+	<link rel="icon" href="<?php echo base_url('/images/fav.ico');?>" type="image/x-icon">
 
     <!-- Bootstrap Core CSS -->
     <link href="<?php echo base_url('/bootstrap/css/bootstrap.min.css');?>" rel="stylesheet" type="text/css">
@@ -1712,7 +1713,7 @@ top tech companies in India
  	width: 100%;		
  	height: 100%;		
  	z-index: 9999;		
- 	background: url(/img/default.gif) center no-repeat #fff;		
+ 	background: url(/img/default1.gif) center no-repeat #fff;		
     }		
  	</style>		
 	<!-- -->
@@ -1768,7 +1769,8 @@ top tech companies in India
 		 
  	<!-- STYLING FOR FB /GOOGLE COLORS -->
 	 <style>
-			.blue{
+
+        	.blue{
 			color:white;
             background-color:#3b5998;
 					}
@@ -1843,7 +1845,7 @@ top tech companies in India
     </script>
     <!--<link href="main.css" rel="stylesheet"/>-->
     <style>
-		
+
         /* code for animated blinking cursor */
         .typed-cursor{
             opacity: 1;
@@ -1894,51 +1896,52 @@ top tech companies in India
 	<div class ="se-pre-con"></div>    
               
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
+        <div class="container" >
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="<?php echo site_url('Home');?>">
-                    <h1>PropChunk</h1>
+                <a class="navbar-brand" href="<?php echo site_url('');?>">
+                  <img src="<?php echo base_url('/images/pclogo3.png');?>" style="height:inherit" class="img-responsive pull-left"/>
                 </a>
+            
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
       <ul class="nav navbar-nav">
-        <li class="<!--active-->"><a href="<?php echo site_url('Home/discover');?>" class="change-color">Browse Project</a></li>
-        <li><a href="#" class="change-color">Investor Protection</a></li>
+        <li class="<!--active-->"><a href="<?php echo site_url('discover');?>" class="change-color">Browse Projects</a></li>
+        <li><a href="<?= site_url("investor-protection")?>" class="change-color">Investor Protection</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle change-color" data-toggle="dropdown">Learn<b class="caret"></b></a>
           <ul class="dropdown-menu dropdown-menu-right">
-            <li><a href="#how-it-works">How it works</a></li>
-            <li><a href="<?php echo site_url('Home/faq');?>">FAQ's</a></li>
-            <li><a href="<?php echo site_url('Home/about_us');?>">About us</a></li>
-            <li><a href="<?php echo site_url('Home/contact');?>">Contact US</a></li>
+            <li><a href="<?php echo site_url('how-it-works');?>">How it works</a></li>
+            <li><a href="<?php echo site_url('faq');?>">FAQ's</a></li>
+            <li><a href="<?php echo site_url('about-us');?>">About us</a></li>
+            <li><a href="<?php echo site_url('contact');?>">Contact US</a></li>
             <li><a href="http://www.blog.propchunk.com" target="_blank">Blog</a></li>
           </ul>
         </li>
         <li><?php
 // Load session library
-           $cred= $this->session->userdata('authdata');
-           print_r($cred);
-      if(null!==($this->session->userdata('authdata')))
+           $name= $this->session->userdata('id');
+            $n= $this->session->userdata('name');
+      if(null!==($this->session->userdata('id')))
             {
                 echo'
               <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Hi,&nbsp;'.$cred[0]->FirstName.'<b class="caret"></b></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Hi,&nbsp;'.$name.'<b class="caret"></b></a>
           <ul class="dropdown-menu dropdown-menu-right">
-            <li><a href="'.site_url('Home/test1').'">Dashboard</a></li>
+            <li><a href="'.site_url('test1').'">Dashboard</a></li>
             <li><a href="#">Profile</a></li>
-            <li><a href="'.site_url('Home/test1').'">Change Password</a></li>
+            <li><a href="'.site_url('test1').'">Change Password</a></li>
             <li><a href="'.site_url('Auth/logout').'">Logout</a></li>
           </ul>
         </li> ';     
             }
             else
             {  
-             echo' <a href="'.site_url('Home/auth').'" style="background:#ed4933;color:white;font-size:12px">Login/Signup</a>';
+             echo' <a href="'.site_url('auth').'" style="background:#ed4933;color:white;font-size:12px">Login/Signup</a>';
                }
 
 ?>
