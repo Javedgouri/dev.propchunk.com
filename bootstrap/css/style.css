@@ -112,7 +112,7 @@ background-color:transparent;
 	    -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
-	color: #fff;
+	color: black !important;
 }
 
 .navbar-custom ul.nav ul.dropdown-menu {
@@ -317,10 +317,10 @@ hr {
 	
 	/*background: url(/dev.propchunk.com/images/banner.jpg) no-repeat top center;*/
 	padding: 12em 0 10em 0 ;
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url(/images/banner.jpg) !Important;
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url(/images/banner.jpg) !Important;
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url(/images/banner.jpg) !Important;
-		background-image: linear-gradient(top, rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url(/images/banner.jpg) !Important;
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url(/dev.propchunk.com/images/banner.jpg) !Important;
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url(/dev.propchunk.com/images/banner.jpg) !Important;
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url(/dev.propchunk.com/images/banner.jpg) !Important;
+		background-image: linear-gradient(top, rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url(/dev.propchunk.com/images/banner.jpg) !Important;
 		background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -754,7 +754,7 @@ Parallax
     }
 
     .navbar-custom.top-nav-collapse {
-        border-bottom: 1px solid rgba(255,255,255,.3);
+        border-bottom: 1px solid #e3e6e8;
     }
 	
     .intro {
