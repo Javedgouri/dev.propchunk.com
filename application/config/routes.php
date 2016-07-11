@@ -72,6 +72,13 @@ foreach($controller_exceptions as $v) {
   $route[$v."/(.*)"] = "$default_controller1/".$v.'/$1';
 }
 
+$default_controller2 = "InvestorDashboard"; // default controller name
+$controller_exceptions = array("dashboard","dashboard1"); 
+foreach($controller_exceptions as $v) {
+  $route[$v] = "$default_controller2/".$v;
+  $route[$v."/(.*)"] = "$default_controller2/".$v.'/$1';
+}
+
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = TRUE;
 $route['cachecontroller'] = 'Cache_controller'; 
