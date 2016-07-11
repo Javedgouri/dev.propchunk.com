@@ -2834,12 +2834,14 @@ img {
   }
 
 }
-@media (max-width: 767px) {
+@media (max-width: 1049px) {
   .navbar-collapse.in {
     overflow-x: hidden;
-    background-color: #ddd;
+    background-color: white;
   }
-
+.navbar-collapse.in a{
+  color: black !important;
+}
   .container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {
     margin-bottom: 10px;
   }
