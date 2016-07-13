@@ -1,13 +1,13 @@
 	<!-- Section: contact -->
-    <section id="contact" class="home-section text-center">
+    <section id="contact" class="home-section">
 		<div class="heading-contact">
 			<div class="container">
 			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2">
+				<div class="col-lg-8 col-lg-offset-2 text-center">
 					<div class="wow bounceInDown" data-wow-delay="0.4s">
 					<div class="section-heading">
 					<h2>Get in touch</h2>
-					<i class="fa fa-2x fa-angle-down"></i>
+					<!--<i class="fa fa-2x fa-angle-down"></i>-->
 
 					</div>
 					</div>
@@ -19,7 +19,7 @@
 
 		<div class="row">
 			<div class="col-lg-2 col-lg-offset-5">
-				<hr class="marginbot-50">
+				<!--<hr class="marginbot-50">-->
 			</div>
 		</div>
     <div class="row">
@@ -28,7 +28,7 @@
                 
 			
 				<?php 
-				$attributes = array('id'=>'contact','name'=>'contact','method'=>'POST');
+				$attributes = array('id'=>'Contact','name'=>'Contact','method'=>'POST');
 				echo form_open('Home/contact_savedata',$attributes);
 				?>
 				
@@ -184,16 +184,18 @@
 				  <strong>Email</strong><br>
 				  <a href="mailto:#">hello@propchunk.com</a>
 				</address>	
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 "id="googleMap" style="width:100%;height:375px;">
-                </div>		
-			</div>	
+                <div style=''><div id='gmap_canvas' style="height:375px !important;width:100%;"></div>
+							<style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div>
+                	</div>	
 		</div>
     </div>	
 
 		</div>
 	</section>
 	<!-- /Section: contact -->
-
+<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDiJ_tvkr37H6OJ1Thb7A6AZcEffkNxBjs'></script>
+							<script type='text/javascript'>function init_map(){var myOptions = {zoom:13,center:new google.maps.LatLng(19.110433,72.888191),mapTypeId: google.maps.MapTypeId.ROADMAP,scrollwheel:false};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(19.110433,72.888191)});infowindow = new google.maps.InfoWindow({content:'<strong>PropChunk CrowdInvesting</strong><br>Sakinaka<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+<!--	
 <script src="http://maps.googleapis.com/maps/api/js"> </script>
 <script>
 var myCenter=new google.maps.LatLng(19.110433,72.888191);
@@ -223,7 +225,7 @@ infowindow.open(map,marker);
 google.maps.event.addDomListener(window, 'load', initialize);
 
 </script>
-
+-->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>  
       <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.validation/1.14.0/jquery.validate.js"></script>
       
@@ -233,6 +235,15 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
 $.validator.setDefaults({
+ 
+    errorPlacement: function(error, element) {
+        if(element.parent('.input-group').length) {
+            error.insertAfter(element.parent());
+        } else {
+            error.insertAfter(element);
+            
+        }
+    },
                 submitHandler: function() {
                        console.log('submited');
                         form.submit();
@@ -240,21 +251,26 @@ $.validator.setDefaults({
         });
 
 
-
+ $.validator.addMethod("EMAIL", function(value, element) {
+                return this.optional(element) || /^[a-zA-Z0-9._-]+@[a-zA-Z0-9-]+\.[a-zA-Z.]{2,5}$/i.test(value);
+            }, "Email Address is invalid: Please enter a valid email address.");
 
                  
                 // validate contact form on keyup and submit
-                 $('#contact').validate({
-                    debug: true,
+                 $('#Contact').validate({
                         rules: {
                                 Name:"required",
                                 EmailId: {
                                         required: true,
-                                        email: true
+                                        email: true,
+                                        EMAIL:true
+
                                 },
                                 PhoneNumber:{
                                         required: true,
-                                        number: true
+                                        number: true,
+                                        minlength:7,
+                                        maxlength:10
                                 },
                                 Subject: 
                                         "required",
@@ -280,3 +296,4 @@ $.validator.setDefaults({
                             }
                 });
 </script>
+
